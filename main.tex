@@ -4,6 +4,12 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amsthm}
+
 
 \setlist{nolistsep}
 
@@ -52,6 +58,22 @@
 
 \input{symbols}
 \input{theorems}
+
+\end{tabularx}
+\end{center}
+
+
+\newpage
+
+
+\begin{center}
+\fontfamily{sans}\selectfont
+\begin{tabularx}{\textwidth}[t]{
+>{\hsize=.4\hsize\linewidth=\hsize}X
+>{\hsize=1.6\hsize\linewidth=\hsize}X
+}
+
+\input{terms}
 
 \end{tabularx}
 \end{center}
