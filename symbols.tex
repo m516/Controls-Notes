@@ -7,7 +7,8 @@
 
 \entry{$x$}{
 \begin{itemize}
-    \item state vector (state space) (\href{https://en.wikipedia.org/wiki/State_space}{W})
+    \item state vector (state space) (\href{https://en.wikipedia.org/wiki/State_space}{W}) \\
+        Type: $ \mathbb{R}^n $
 \end{itemize} 
 }
 
@@ -18,6 +19,36 @@
 \entry{$H$}{
 \begin{itemize}
     \item Hamiltonian matrix (\href{https://en.wikipedia.org/wiki/Hamiltonian_matrix}{W})
+    \item Hamiltonian (Hamiltonian mechanics) (\href{https://en.wikipedia.org/wiki/State_space}{W}) \\
+        type: $ \mathbb{R}^n \rightarrow \mathbb{R} $
+        \begin{itemize}
+            \item Assuming discrete time linear system: $ H_k = L(x_k, u_k, k) + p_{k+1}^{T} f(x_k, u_k, k)  $
+        \end{itemize} 
+            
+            
+    
+\end{itemize} 
+}
+
+
+
+
+
+\entry{$\mathcal{L}$}{
+\begin{itemize}
+    \item the Lagrangian \\
+    type: $ \mathbb{R}^n \rightarrow \mathbb{R} $
+\end{itemize} 
+}
+
+
+
+
+
+\entry{$J$}{
+\begin{itemize}
+    \item Cost to go function \\
+    type: $ \mathbb{R}^n \rightarrow \mathbb{R} $
 \end{itemize} 
 }
 
@@ -26,5 +57,16 @@
 \entry{$p$}{
 \begin{itemize}
     \item Lagrange multiplier (\href{https://en.wikipedia.org/wiki/Lagrange_multiplier}{W})
+\end{itemize} 
+}
+
+
+
+\entry{$< >$}{
+\begin{itemize}
+    \item Lie bracket notation (\href{https://en.wikipedia.org/wiki/Lie_bracket_of_vector_fields}{W}) \\
+            $ <a, b> = b^T a $
+
+    
 \end{itemize} 
 }
