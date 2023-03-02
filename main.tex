@@ -1,49 +1,57 @@
 \documentclass{article}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{hyperref} % Links
-\usepackage{}
+\usepackage[table]{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+
+\setlist{nolistsep}
+
+\definecolor{blue}{HTML}{008ED7}
+\definecolor{mygray}{gray}{0.75}
+\definecolor{lightBlue}{HTML}{e5f7ff}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\arraystretch}{1.5}
+
+
+\newcommand{\entry}[2] {
+ #1 &
+\begin{minipage}[t]{\linewidth}%
+    #2
+\end{minipage} \\
+\arrayrulecolor{mygray}\hline
+}
+
+\newcommand{\boldentry}[1]{
+\\
+\hline
+\rowcolor{lightBlue} \multicolumn{2}{l}{%
+\textbf{\textcolor{blue}{#1}}} \\
+\hline
+
+}
 
 
 \title{Controls Notes}
 
+
 \begin{document}
+
+
 
 \maketitle
 
-\section{Common symbols}
-
-\subsection{State Space Equations}
-$x$: System state
-$y$: System output
 
 
-\subsection{Optimal Controls}
-\begin{itemize}
-    
+\begin{center}
+\fontfamily{cmss}\selectfont
+\begin{tabularx}{\textwidth}[t]{Xc}
 
+\input{symbols}
+\input{theorems}
 
-\begin{item}
-$H$: Hamiltonian matrix (\href{http://www.overleaf.com}{Wikipedia})
-\end{item}
-
-
-\begin{item}
-$p$: Lagrange multiplier
-\end{item}
-
-
-
-\begin{item}
-$\nabla$
-\end{item}
-
-
-\end{itemize}
-
-\section{Common Equations}
-
-Linear system dynamics
-$x=Ax+Bu$
-
+\end{tabularx}
+\end{center}
 
 \end{document}
