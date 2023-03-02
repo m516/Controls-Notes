@@ -12,7 +12,6 @@
 \definecolor{lightBlue}{HTML}{e5f7ff}
 
 \renewcommand{\familydefault}{\sfdefault}
-\renewcommand{\arraystretch}{1.5}
 
 
 \newcommand{\entry}[2] {
@@ -34,7 +33,7 @@
 
 
 \title{Controls Notes}
-
+\author{M516}
 
 \begin{document}
 
@@ -45,8 +44,11 @@
 
 
 \begin{center}
-\fontfamily{cmss}\selectfont
-\begin{tabularx}{\textwidth}[t]{Xc}
+\fontfamily{sans}\selectfont
+\begin{tabularx}{\textwidth}[t]{
+>{\hsize=.1\hsize\linewidth=\hsize}X
+>{\hsize=1.9\hsize\linewidth=\hsize}X
+}
 
 \input{symbols}
 \input{theorems}
