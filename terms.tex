@@ -27,3 +27,78 @@
     \item The determinant of a Hessian matrix
 \end{itemize} 
 }
+
+
+
+\entry{  
+    definite
+}{
+Given a (any?) function $V(x) : \mathbb{R} \rightarrow \mathbb{R}$ \\
+$V(x)$ can be classified as
+\begin{itemize}
+    \item 
+        \textbf{(globally) positive semidefinite} if 
+        \[
+            V(x) \geq 0 \qquad \forall x \in \mathbb{R}
+        \]
+        \begin{center}
+            \textit{($v$ is greater than or equal to 0 regardless of $x$)}
+        \end{center}
+    
+    \item 
+        \textbf{(globally) positive definite} if positive semidefinite AND
+        \[
+            V(x) = 0 \iff x = 0
+        \]
+        \begin{center}
+            \textit{($V(x)$ is zero if and only if $x$ is zero)}
+        \end{center}
+        
+    \item 
+        \textbf{(globally) negative semidefinite} if 
+        \[
+            V(x) \leq 0 \qquad \forall x \in \mathbb{R}
+        \]
+        \begin{center}
+            \textit{($v$ is less than or equal to 0 regardless of $x$)}
+        \end{center}
+    
+    \item 
+        \textbf{(globally) negative definite} if negative semidefinite AND
+        \[
+            V(x) = 0 \iff x = 0
+        \]
+        \begin{center}
+            \textit{($V(x)$ is zero if and only if $x$ is zero)}
+        \end{center}
+
+        
+    \item 
+        \textbf{locally positive definite (l.p.d)} if 
+        \[
+            V(x) \geq 0 \qquad \forall x \in N
+        \]
+        where $N$ is a small open neighborhood containing $\Vec{0}$
+        \begin{center}
+            \textit{($v$ is greater than or equal to 0 regardless of $x$ in some small open neighborhood $N$ that contains the zero vector)}
+        \end{center}
+        \begin{center}
+            \textbf{AND}
+        \end{center}
+        \[
+            V(x) = 0 \iff x = 0
+        \]
+        \begin{center}
+            \textit{($V(x)$ is zero if and only if $x$ is zero)}
+        \end{center}
+
+        Note that the criteria for a function to be locally positive definite are similar, but more relaxed than, those for globally positive definite functions.
+
+        
+    \item 
+        \textbf{positive definite on some domain $D \in \mathbb{R}^n$} if \\
+        we only care if the conditions for positive definite functions hold for all $x$ in $D$.
+    
+    
+\end{itemize} 
+}
