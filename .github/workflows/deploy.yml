@@ -25,14 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      # Makes a new public folder for deploying to GitHub Pages
-      # Generates a list of all .tex files
-      - name: Shell Magic
-        id: shell-magic
-        run: |
-          mkdir ./public
-          echo "files=$(printf '"%s" ' *.tex)" >> $GITHUB_OUTPUT
-      
       # Compiles a PDF
       - name: Build Latex PDF
         uses: xu-cheng/latex-action@v2
@@ -42,9 +34,17 @@ jobs:
       
       # Compiles an HTML wepage (WIP)
       - name: Build Latex HTML
-        uses: docker://pandoc/core:2.9
-        with:
-          args: ${{ steps.shell-magic.outputs.files }} -f latex -s --mathjax -o ./public/index.html -t html5
+        run: |
+          mkdir ./public
+          htlatex main.tex
+          cp *.tex public/
+          cd public/
+          htlatex main.tex
+          mv main.html index.html
+#       - name: Build Latex HTML
+#         uses: docker://pandoc/core:2.9
+#         with:
+#           args: ${{ steps.shell-magic.outputs.files }} -f latex -s --mathjax -o ./public/index.html -t html5
   
       # Uploads the PDF
       - name: Upload artifact
