@@ -198,42 +198,47 @@ Css: table.longtable{margin-left:auto; margin-right: auto;}
 Css:  #TBL-5-8- td{ background-color:#E5F7FF}
 Css: span#textcolor4{color:#0000FF}
 Css: td#TBL-5-19-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[2] ==> main15x.png ---
+--- needs --- main.idv[2] ==> main18x.png ---
 Css: td#TBL-5-24-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-5-29-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[4] ==> main16x.png ---
+--- needs --- main.idv[3] ==> main19x.png ---
 Css: td#TBL-5-34-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[6] ==> main17x.png ---
---- needs --- main.idv[7] ==> main18x.png ---
---- needs --- main.idv[8] ==> main19x.png ---
+--- needs --- main.idv[5] ==> main20x.png ---
 Css: td#TBL-5-39-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[7] ==> main21x.png ---
+--- needs --- main.idv[8] ==> main22x.png ---
+--- needs --- main.idv[9] ==> main23x.png ---
 Css: td#TBL-5-44-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-5-49-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-5-54-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-5-59-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-5-64-1{border-bottom:0.06999em solid #BFBFBF}
 Css:  #TBL-9-8- td{ background-color:#E5F7FF}
 Css: span#textcolor8{color:#0000FF}
 Css: td#TBL-9-19-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[10] ==> main29x.png ---
---- needs --- main.idv[11] ==> main30x.png ---
---- needs --- main.idv[12] ==> main31x.png ---
+--- needs --- main.idv[11] ==> main33x.png ---
+--- needs --- main.idv[12] ==> main34x.png ---
+--- needs --- main.idv[13] ==> main35x.png ---
 Css: td#TBL-9-24-1{border-bottom:0.06999em solid #BFBFBF}
 Css:  #TBL-13-8- td{ background-color:#E5F7FF}
 Css: span#textcolor12{color:#0000FF}
 Css: td#TBL-13-20-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-26-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[14] ==> main50x.png ---
---- needs --- main.idv[15] ==> main51x.png ---
---- needs --- main.idv[16] ==> main52x.png ---
---- needs --- main.idv[17] ==> main53x.png ---
---- needs --- main.idv[18] ==> main54x.png ---
---- needs --- main.idv[19] ==> main55x.png ---
+--- needs --- main.idv[15] ==> main60x.png ---
+--- needs --- main.idv[16] ==> main61x.png ---
+--- needs --- main.idv[17] ==> main62x.png ---
+--- needs --- main.idv[18] ==> main63x.png ---
+--- needs --- main.idv[19] ==> main64x.png ---
+--- needs --- main.idv[20] ==> main65x.png ---
 Css: td#TBL-13-32-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-37-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-42-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-47-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-52-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-57-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[22] ==> main66x.png ---
+--- needs --- main.idv[23] ==> main67x.png ---
+Css: td#TBL-13-62-1{border-bottom:0.06999em solid #BFBFBF}
 --- characters ---
 Font("cmss","10","10","100")
 Font("cmss","17","17","100")
