@@ -1,0 +1,132 @@
+\boldentry{Variables and Symbols}
+
+
+
+
+
+\entry{$x$}{
+\begin{itemize}
+    \item state vector (state space) (\href{https://en.wikipedia.org/wiki/State_space}{W}) \\
+        Type: $ \mathbb{R}^n $
+\end{itemize} 
+}
+
+
+
+
+
+\entry{$H$}{
+\begin{itemize}
+    \item Hamiltonian matrix 
+    \item Hamiltonian (Hamiltonian mechanics) (\href{https://en.wikipedia.org/wiki/State_space}{W}) \\
+        type: $ \mathbb{R}^n \rightarrow \mathbb{R} $
+        \begin{itemize}
+            \item Assuming discrete time linear system: 
+            \[H_k = L(x_k, u_k, k) + p_{k+1}^{T} f(x_k, u_k, k)\]
+        \end{itemize} 
+            
+            
+    
+\end{itemize} 
+}
+
+
+
+
+
+\entry{$\mathcal{L}$}{
+\begin{itemize}
+    \item the Lagrangian \\
+    type: $ \mathbb{R}^n \rightarrow \mathbb{R} $
+\end{itemize} 
+}
+
+
+
+
+
+
+
+
+\entry{$e_\#$}{
+\begin{itemize}
+    \item The \#th unit vector\\
+        \[\qquad e_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \\\vdots \\ 0 \end{pmatrix},
+          \qquad e_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \\\vdots \\ 0 \end{pmatrix},
+          \qquad e_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \\\vdots \\ 0 \end{pmatrix},
+          \qquad \hdots \]
+\end{itemize} 
+}
+
+
+
+
+
+
+\entry{$\nabla$}{
+The del operator, which represents one of many long but similar operators on a vector field $v \in \mathbb{R}^n$.
+\begin{itemize}
+    \item $\nabla f$: Gradient of a function $f : \mathbb{R}^n \rightarrow \mathbb{R}$, 
+        returning an $n$-dimensional vector. (\href{https://en.wikipedia.org/wiki/Del}{W}) \\
+        This vector points in the direction of the greatest increase, and its magnitude is the slope. \\
+        
+        For example, a mountain climber could approximate the shape of a convex 
+        mountain as a function $f_{mountain}$ that computes the altitude given 
+        some latitude and longitude (assuming a very small mountain very far 
+        from the poles). In other words, 
+        $f_{mountain} : \mathbb{R}^2 \rightarrow \mathbb{R}$. The climber could 
+        know which direction to climb to summit the peak: it's the direction 
+        $\nabla f$, and the grade or slope of the mountain is $\left| \nabla f \right|$\\
+
+        Note that if $n = 1$, $\nabla f$ is the standard derivative of $f$. \\
+        Formally speaking:
+        \[\nabla f = \displaystyle\sum_{i=1} ^{n} \frac{\partial f}{\partial x_i} e_i\]
+    \item $\nabla \cdot \Vec{v}$: The divergence of a vector field $\Vec{v}$
+    \item $\nabla \times \Vec{v}$: The curl of a vector field $\Vec{v}$
+    \item $\Delta f$: the Laplace operator on a function $f : \mathbb{R}^n \rightarrow \mathbb{R}$,
+        equivalent to the divergence of the gradient of $f$, i.e. 
+        \[\delta f = \nabla^2 f = \nabla \cdot \nabla f\]
+\end{itemize} 
+}
+
+
+
+ 
+
+\entry{$J$}{
+\begin{itemize}
+    \item Cost to go function \\
+    type: $ \mathbb{R}^n \rightarrow \mathbb{R} $
+\end{itemize} 
+}
+
+
+
+\entry{$p$}{
+\begin{itemize}
+    \item Lagrange multiplier (\href{https://en.wikipedia.org/wiki/Lagrange_multiplier}{W})
+\end{itemize} 
+}
+
+
+
+\entry{$< >$}{
+\begin{itemize}
+    \item Lie bracket notation (\href{https://en.wikipedia.org/wiki/Lie_bracket_of_vector_fields}{W}) \\
+            $ <a, b> = b^T a $
+
+    
+\end{itemize} 
+}
+
+
+
+
+\entry{norm}{
+\begin{itemize}
+    \item Vector norm (TODO)
+    \item Matrix norm (TODO)
+    \item Functional norm (TODO)
+    
+\end{itemize} 
+}

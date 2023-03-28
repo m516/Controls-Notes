@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{commath}
+\usepackage[sc,osf]{mathpazo}
+
+\setlist{nolistsep}
+
+\definecolor{blue}{HTML}{008ED7}
+\definecolor{mygray}{gray}{0.75}
+\definecolor{lightBlue}{HTML}{e5f7ff}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\newcommand{\entry}[2] {
+ #1 &
+\begin{minipage}[t]{\linewidth}%
+    #2
+\end{minipage} \\
+\arrayrulecolor{mygray}\hline
+}
+
+\newcommand{\boldentry}[1]{
+\\
+\hline
+\rowcolor{lightBlue} \multicolumn{2}{l}{%
+\textbf{\textcolor{blue}{#1}}} \\
+\hline
+
+}
+
+
+\title{Controls Notes}
+\author{M516}
+
+\begin{document}
+
+
+
+\maketitle
+
+
+
+\begin{center}
+\begin{tabularx}{\textwidth}[t]{
+>{\hsize=.1\hsize\linewidth=\hsize}X
+>{\hsize=1.9\hsize\linewidth=\hsize}X
+}
+
+\input{symbols}
+\input{theorems}
+
+\end{tabularx}
+\end{center}
+
+
+\newpage
+
+
+\begin{center}
+\begin{tabularx}{\textwidth}[t]{
+>{\hsize=.4\hsize\linewidth=\hsize}X
+>{\hsize=1.6\hsize\linewidth=\hsize}X
+}
+
+\input{terms}
+
+\end{tabularx}
+\end{center}
+
+\end{document}

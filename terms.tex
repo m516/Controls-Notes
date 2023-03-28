@@ -1,0 +1,174 @@
+
+\boldentry{Terms}
+
+
+
+
+\entry{  
+    Lipschitz Continuity \\
+    \href{https://en.wikipedia.org/wiki/Lipschitz_continuity}{W},
+    \href{https://math.berkeley.edu/~mgu/MA128ASpring2017/MA128ALectureWeek9.pdf}{UC Berkley}
+}{
+    Lipschitz continuous functions are continuous and differentiable almost anywhere in a domain. \\\\
+    Given a domain $D$ and a function $f: D \rightarrow \mathbb{R}, D \in \mathbb{R}^n$, \\
+    $f$ is Lipschitz continuous if $\exists L>0$ such that $|f(x) - f(y)| < L ||(x-y)|| \forall x,y \in D$
+}
+
+
+
+\entry{  
+    Hessian \\
+    \href{https://en.wikipedia.org/wiki/Hessian_matrix}{W},
+    \href{https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/quadratic-approximations/a/the-hessian}{Kahn Academy},
+    \href{https://mathworld.wolfram.com/Hessian.html}{Wolfram}
+}{
+\begin{itemize}
+    \item A $2n$ x $2n$ matrix of all 2nd order partial derivatives of some function $f : \mathbb{R}^n \rightarrow \mathbb{R}$
+    \item The determinant of a Hessian matrix
+\end{itemize} 
+}
+
+
+
+\entry{  
+    definite \\
+    \href{https://en.wikipedia.org/wiki/Positive-definite_function}{W}
+}{
+\emph{Warning: this definition does not appear to be common outside of controls}\\
+
+Given a real-valued, continuously differentiable function $V(x) : \mathbb{R} \rightarrow \mathbb{R}$ \\
+$V(x)$ can be classified as
+\begin{itemize}
+    \item 
+        \textbf{(globally) positive semidefinite} if 
+        \[
+            V(x) \geq 0 \qquad \forall x \in \mathbb{R}
+        \]
+        \begin{center}
+            \textit{($v$ is greater than or equal to 0 regardless of $x$)}
+        \end{center}
+    
+    \item 
+        \textbf{(globally) positive definite} if positive semidefinite AND
+        \[
+            V(x) = 0 \iff x = 0
+        \]
+        \begin{center}
+            \textit{($V(x)$ is zero if and only if $x$ is zero)}
+        \end{center}
+        
+    \item 
+        \textbf{(globally) negative semidefinite} if 
+        \[
+            V(x) \leq 0 \qquad \forall x \in \mathbb{R}
+        \]
+        \begin{center}
+            \textit{($v$ is less than or equal to 0 regardless of $x$)}
+        \end{center}
+    
+    \item 
+        \textbf{(globally) negative definite} if negative semidefinite AND
+        \[
+            V(x) = 0 \iff x = 0
+        \]
+        \begin{center}
+            \textit{($V(x)$ is zero if and only if $x$ is zero)}
+        \end{center}
+
+        
+    \item 
+        \textbf{locally positive definite (l.p.d)} if 
+        \[
+            V(x) \geq 0 \qquad \forall x \in N
+        \]
+        where $N$ is a small open neighborhood containing $\Vec{0}$
+        \begin{center}
+            \textit{($v$ is greater than or equal to 0 regardless of $x$ in some small open neighborhood $N$ that contains the zero vector)}
+        \end{center}
+        \begin{center}
+            \textbf{AND}
+        \end{center}
+        \[
+            V(x) = 0 \iff x = 0
+        \]
+        \begin{center}
+            \textit{($V(x)$ is zero if and only if $x$ is zero)}
+        \end{center}
+
+        Note that the criteria for a function to be locally positive definite are similar, but more relaxed than, those for globally positive definite functions.
+
+        
+    \item 
+        \textbf{positive definite on some domain $D \in \mathbb{R}^n$} if \\
+        we only care if the conditions for positive definite functions hold for all $x$ in $D$.
+    
+    
+\end{itemize} 
+} % end definite
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+\entry{  
+    Stability
+}{
+\begin{itemize}
+    \item (Lyapunov) stability (TODO)
+    \item Asymptotic stability  (TODO)
+    \item Exponential stability (TODO)
+    \item Uniform stability (TODO)
+    \item Global stability (TODO)
+    \item L-stability (TODO)
+    \item I/O L-stability (TODO)
+    \item Small-signal I/O L-stability (TODO)
+    \item Small-signal finite-gain L-stability (TODO)
+    
+\end{itemize} 
+}
+
+
+
+
+
+
+\entry{  
+    Class K function
+}{
+\begin{itemize}
+    \item (TODO)
+\end{itemize} 
+}
+
+
+
+
+
+
+\entry{  
+    Radially Unbounded function
+}{
+\begin{itemize}
+    \item (TODO)
+\end{itemize} 
+}
+
+
+
+
+
+
+\entry{  
+    $\sup$ (supremum)
+}{
+    Like a maximum of a functions, but includes limits that aren't necessarily a part of the domain of the function.
+    (TODO)
+}
