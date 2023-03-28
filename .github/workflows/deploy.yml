@@ -25,19 +25,28 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: Build Latex
+      # Compiles a PDF
+      - name: Build Latex PDF
         uses: xu-cheng/latex-action@v2
         with:
           root_file: |
             main.tex
+      
+      # Compiles an HTML wepage (WIP)
+      - name: Build Latex HTML
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: "--help" # gets appended to pandoc command
   
+      # Uploads the PDF
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: PDF
           path: main.pdf
 
-      - name: Release
+      # Publishes the PDF as a release
+      - name: Publish PDF
         uses: softprops/action-gh-release@v1
         # if: startsWith(github.ref, 'refs/tags/')
         with:
