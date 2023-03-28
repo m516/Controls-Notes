@@ -35,11 +35,11 @@ jobs:
       # Compiles an HTML wepage (WIP)
       - name: Build Latex HTML
         run: |
+          apt install texlive-full
           mkdir ./public
-          htlatex main.tex
           cp *.tex public/
           cd public/
-          htlatex main.tex
+          make4ht main.tex
           mv main.html index.html
 #       - name: Build Latex HTML
 #         uses: docker://pandoc/core:2.9
