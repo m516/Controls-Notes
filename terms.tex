@@ -188,3 +188,28 @@ A system is stable if its control matrix is a Hurwitz matrix.
 
 The negative real components of the eigenvalues of the matrix represent negative feedback. Similarly, a system is inherently unstable if any of the eigenvalues have positive real components, representing positive feedback. 
 }
+
+
+
+
+
+\entry{  
+    Zero-state observable
+}{
+    A time-invariant system of the form
+    \[ \begin{cases} 
+          \dot{x} = f(x, u) \\
+          y = h(x, u)
+       \end{cases}
+    \]
+    
+    is zero-state observable if
+    
+    \[ \begin{cases} 
+          y \equiv 0 \\
+          u \equiv 0
+    \end{cases} \implies x \equiv 0
+    \]
+
+    In other words, when $u=0$, any nonzero state behavior will be observed at the output ($y\neq0$)
+}
