@@ -24,11 +24,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-            
-      - name: Create public folder
+      
+      # Makes a new public folder for deploying to GitHub Pages
+      # Generates a list of all .tex files
+      - name: Shell Magic
         run: |
           mkdir ./public
-          echo "::set-output name=files::$(printf '"%s" ' *.md)"
+          echo "::set-output name=files::$(printf '"%s" ' *.tex)"
       
       # Compiles a PDF
       - name: Build Latex PDF
@@ -59,7 +61,7 @@ jobs:
           files: main.pdf
           
       # Publish HTML to GitHub Pages
-      - name: Deploy
+      - name: Publish HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
