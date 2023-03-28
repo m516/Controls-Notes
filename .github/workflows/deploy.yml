@@ -34,7 +34,7 @@ jobs:
       
       # Compiles an HTML wepage (WIP)
       - name: Build Latex HTML
-      - uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/core:2.9
         with:
           args: "--help" # gets appended to pandoc command
   
