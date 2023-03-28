@@ -44,7 +44,7 @@ jobs:
       - name: Build Latex HTML
         uses: docker://pandoc/core:2.9
         with:
-          args: ${{ steps.shell-magic.outputs.files }} -o ./public/index.html -t html5
+          args: ${{ steps.shell-magic.outputs.files }}  -s -f latex -o ./public/index.html -t html5
   
       # Uploads the PDF
       - name: Upload artifact
