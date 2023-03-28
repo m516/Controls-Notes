@@ -9,3 +9,51 @@
     \item TODO
 \end{itemize} 
 }
+
+
+\entry{
+    Small-gain Theorem
+}{
+Given
+\begin{itemize}
+    \item $H_1$: an Input-Output System with input $e_1$ and output $y_1$ that is finite-gain $\mathcal{L}_p$-stable
+    \item $H_2$: an Input-Output System with input $e_2$ and output $y_2$ that is finite-gain $\mathcal{L}_p$-stable
+    \item $y_1=H_1 e_1$
+    \item $y_2=H_2 e_2$
+    \item $e_1=u_1-y_2$
+    \item $e_2=u_2-y_1$
+\end{itemize} 
+
+By the definition of finite-gain $\mathcal{L}_p$-stable,
+\[
+    \norm{{y_1}_\tau}_{\mathcal{L}_p} \leq \gamma_1 \norm{{e_1}_\tau}_{\mathcal{L}_p} + \beta_1
+\]
+\begin{center}
+    \textit{(The $\mathcal{L}_p$ norm of the $y_1$ is truncated by $\tau$, i.e. the system response is zero when $t>\tau$. This is less than or equal to The $\mathcal{L}_p$ norm of the $e_1$ truncated by $t<\tau$, multiplied by some gain value $\gamma_1$, plus some bias $\beta_1$)}
+\end{center}
+
+As long as a system does not have a finite escape time, we can compute the $\mathcal{L}_p$ norm of the system. \\
+
+Likewise,
+\[
+    \norm{{y_2}_\tau}_{\mathcal{L}_p} \leq \gamma_2 \norm{{e_2}_\tau}_{\mathcal{L}_p} + \beta_2
+\]
+
+The Small-gain Theorem tells us,
+\begin{equation}
+    \norm{ 
+        \begin{matrix} 
+            {{y_1}_\tau} \\ {{y_2}_\tau} 
+        \end{matrix} 
+    }_{\mathcal{L}_p} 
+    \le 
+    \frac{1}{1-\gamma_1 \gamma_2} \left( 
+        \norm{{u_1}_\tau}_{\mathcal{L}_p} + \gamma_2 \norm{{u_2}_\tau}_{\mathcal{L}_p} + \gamma_2 \beta_1 + \beta_2 
+    \right)
+    = \gamma_3 \left( \text{some $\mathcal{L}_p$-stable system} \right)
+\end{equation}
+
+
+Therefore, if $\gamma_1$ and $\gamma_2$ are less than one, the feedback connection is input/output stable (finite-gain $\mathcal{L}_p$-stable)
+
+}

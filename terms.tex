@@ -165,3 +165,26 @@ $V(x)$ can be classified as
     Like a maximum of a functions, but includes limits that aren't necessarily a part of the domain of the function.
     (TODO)
 }
+
+
+
+
+
+\entry{  
+    Hurwitz
+}{
+\begin{itemize}
+    \item \textbf{Hurwitz (polynomial)}: \\
+        A polynomial whose roots that are all in the left-half plane. (In other words, the real part of every root is strictly negative)
+    \item \textbf{Hurwitz (matrix)} (\href{https://en.wikipedia.org/wiki/Hurwitz_matrix}{W}): \\
+        A square matrix whose characteristic polynomial is Hurwitz, meaning all eigenvalues are in the left-half plane. (In other words, the real part of every eigenvalue is strictly negative)
+    \item \textbf{Routh-Hurwitz stability criterion} (\href{https://ieeexplore.ieee.org/document/165530}{IEEE}): \\
+        TODO
+\end{itemize} 
+
+Any hyperbolic fixed point (or equilibrium point) of a continuous dynamical system is locally asymptotically stable if and only if the Jacobian of the dynamical system is Hurwitz stable at the fixed point.
+
+A system is stable if its control matrix is a Hurwitz matrix. 
+
+The negative real components of the eigenvalues of the matrix represent negative feedback. Similarly, a system is inherently unstable if any of the eigenvalues have positive real components, representing positive feedback. 
+}

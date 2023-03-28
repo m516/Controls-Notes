@@ -14,6 +14,7 @@ htfcss: zplmr7m font-style: italic;
 htfcss: cmmi font-style: italic;
 htfcss: cmmib font-style: italic; font-weight: bold;
 htfcss: zplmr7m font-style: italic;
+htfcss: zplmr7m font-style: italic;
 htfcss: cmss   font-family: sans-serif;
 htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
 htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
@@ -213,21 +214,26 @@ Css: td#TBL-5-59-1{border-bottom:0.06999em solid #BFBFBF}
 Css:  #TBL-9-8- td{ background-color:#E5F7FF}
 Css: span#textcolor8{color:#0000FF}
 Css: td#TBL-9-19-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[10] ==> main29x.png ---
+--- needs --- main.idv[11] ==> main30x.png ---
+--- needs --- main.idv[12] ==> main31x.png ---
+Css: td#TBL-9-24-1{border-bottom:0.06999em solid #BFBFBF}
 Css:  #TBL-13-8- td{ background-color:#E5F7FF}
 Css: span#textcolor12{color:#0000FF}
 Css: td#TBL-13-20-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-26-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[10] ==> main38x.png ---
---- needs --- main.idv[11] ==> main39x.png ---
---- needs --- main.idv[12] ==> main40x.png ---
---- needs --- main.idv[13] ==> main41x.png ---
---- needs --- main.idv[14] ==> main42x.png ---
---- needs --- main.idv[15] ==> main43x.png ---
+--- needs --- main.idv[14] ==> main50x.png ---
+--- needs --- main.idv[15] ==> main51x.png ---
+--- needs --- main.idv[16] ==> main52x.png ---
+--- needs --- main.idv[17] ==> main53x.png ---
+--- needs --- main.idv[18] ==> main54x.png ---
+--- needs --- main.idv[19] ==> main55x.png ---
 Css: td#TBL-13-32-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-37-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-42-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-47-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-13-52-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-13-57-1{border-bottom:0.06999em solid #BFBFBF}
 --- characters ---
 Font("cmss","10","10","100")
 Font("cmss","17","17","100")
@@ -236,7 +242,9 @@ Font("pplr9t","","10","100")
 Font("pplr9t","","10","76")
 Font("zplmr7m","","10","100")
 Font("zplmr7m","","10","76")
+Font("zplmr7m","","10","60")
 Font("zplmr7y","","10","100")
+Font("zplmr7y","","10","76")
 Font("zplmr7v","","10","100")
 Font("zplmr7t","","10","100")
 Font("zplmr7t","","10","76")

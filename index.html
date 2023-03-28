@@ -183,7 +183,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
                                                                                                        
 <!-- l. 75 --><p class='noindent'>
 </p>
-<a id='x1-3r2'></a><!-- l. 81 --><div class='longtable'> <table class='longtable' id='TBL-9'><colgroup id='TBL-9-1g'><col id='TBL-9-1' /><col id='TBL-9-2' /></colgroup>
+<a id='x1-6r2'></a><!-- l. 81 --><div class='longtable'> <table class='longtable' id='TBL-9'><colgroup id='TBL-9-1g'><col id='TBL-9-1' /><col id='TBL-9-2' /></colgroup>
 <tr id='TBL-9-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 1 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-4-1' style='white-space:normal; text-align:left;'>
@@ -206,18 +206,71 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 </tr><tr id='TBL-9-18-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-18-1' style='white-space:normal; text-align:left;'>
  <!-- l. 11 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-19-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-9-19-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-9-20-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-20-1' style='white-space:normal; text-align:left;'>
- <!-- l. 81 --><p class='noindent'>                                                </p></td>
+ <!-- l. 59 --><p class='noindent'>Small-gain Theorem                                                   </p></td><td class='td11' id='TBL-9-20-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 59 --><p class='noindent'>Given </p>
+       <ul class='itemize1'>
+       <li class='itemize'><span class='zplmr7m-'>H</span><sub><span class='pplr9t-x-x-76'>1</span></sub>: an Input-Output System with input <span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>1</span></sub>  and output <span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>1</span></sub>  that is finite-gain <span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub>-stable
+       </li>
+       <li class='itemize'><span class='zplmr7m-'>H</span><sub><span class='pplr9t-x-x-76'>2</span></sub>: an Input-Output System with input <span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>2</span></sub>  and output <span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>2</span></sub>  that is finite-gain <span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub>-stable
+       </li>
+       <li class='itemize'><span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>1</span></sub> <span class='zplmr7t-'>= </span><span class='zplmr7m-'>H</span><sub><span class='pplr9t-x-x-76'>1</span></sub><span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>1</span></sub>
+           </li>
+           <li class='itemize'><span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>2</span></sub> <span class='zplmr7t-'>= </span><span class='zplmr7m-'>H</span><sub><span class='pplr9t-x-x-76'>2</span></sub><span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>2</span></sub>
+           </li>
+           <li class='itemize'><span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>1</span></sub> <span class='zplmr7t-'>= </span><span class='zplmr7m-'>u</span><sub><span class='pplr9t-x-x-76'>1</span></sub> <span class='zplmr7y-'>−</span><span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>2</span></sub>
+           </li>
+           <li class='itemize'><span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>2</span></sub> <span class='zplmr7t-'>= </span><span class='zplmr7m-'>u</span><sub><span class='pplr9t-x-x-76'>2</span></sub> <span class='zplmr7y-'>−</span><span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>1</span></sub></li></ul>
+<!-- l. 59 --><p class='noindent'>By the definition of finite-gain <span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub>-stable,
+</p>
+<div class='math-display'>
+<img alt='∥   ∥
+∥y 1τ∥ℒp ≤ γ1∥e1τ∥ℒp + β1
+' class='math-display' src='main29x.png' /></div>
+<div class='center'>
+<!-- l. 59 --><p class='noindent'>
+</p><!-- l. 59 --><p class='noindent'><span class='cmssi-10'>(The </span><span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub> <span class='cmssi-10'>norm of the </span><span class='zplmr7m-'>y</span><sub><span class='pplr9t-x-x-76'>1</span></sub> <span class='cmssi-10'>is truncated by </span><span class='zplmr7m-'>τ</span><span class='cmssi-10'>, i.e. the system response is zero when </span><span class='zplmr7m-'>t &gt; τ</span><span class='cmssi-10'>. This is
+</span><span class='cmssi-10'>less than or equal to The </span><span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub> <span class='cmssi-10'>norm of the </span><span class='zplmr7m-'>e</span><sub><span class='pplr9t-x-x-76'>1</span></sub> <span class='cmssi-10'>truncated by </span><span class='zplmr7m-'>t &lt; τ</span><span class='cmssi-10'>, multiplied by some gain value
+</span><span class='zplmr7m-'>γ</span><sub><span class='pplr9t-x-x-76'>1</span></sub><span class='cmssi-10'>, plus some bias </span><span class='zplmr7m-'>β</span><sub><span class='pplr9t-x-x-76'>1</span></sub><span class='cmssi-10'>)</span></p></div>
+<!-- l. 59 --><p class='noindent'>As long as a system does not have a finite escape time, we can compute the <span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub> norm of the system.
+<br class='newline' />
+</p><!-- l. 59 --><p class='noindent'>Likewise,
+</p>
+<div class='math-display'>
+<img alt='∥∥   ∥∥
+  y2τ ℒp ≤ γ2∥e2τ∥ℒp + β2
+' class='math-display' src='main30x.png' /></div>
+<!-- l. 59 --><p class='noindent'>The Small-gain Theorem tells us,
+</p>
+<table class='equation'><tr><td>
+<div class='math-display'>
+<img alt='∥∥###∥∥            (                             )     (                  )
+∥∥y1τ∥∥  ≤ ----1--- ∥u  ∥  + γ ∥u  ∥   + γ β + β   = γ  some ℒ -stable system
+∥∥y2τ∥∥    1 − γ1γ2   1τ ℒp    2 2τ ℒp    2 1   2     3       p
+     ℒp
+' class='math-display' src='main31x.png' /><a id='x1-7r1'></a></div>
+</td><td class='equation-label'>(1)</td></tr></table>
+<!-- l. 59 --><p class='nopar'>
+</p><!-- l. 59 --><p class='noindent'>Therefore, if <span class='zplmr7m-'>γ</span><sub><span class='pplr9t-x-x-76'>1</span></sub> and <span class='zplmr7m-'>γ</span><sub><span class='pplr9t-x-x-76'>2</span></sub> are less than one, the feedback connection is input/output stable (finite-gain
+<span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub>-stable) </p> </div>                                                                                                           </td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-9-22-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-22-1' style='white-space:normal; text-align:left;'>
- <!-- l. 81 --><p class='noindent'>                                                </p></td>
+ <!-- l. 59 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-23-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-23-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 59 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-9-24-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-9-24-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-9-25-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-25-1' style='white-space:normal; text-align:left;'>
  <!-- l. 81 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-9-24-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-24-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-9-24-2' style='white-space:normal; text-align:left;'></td></tr>
+</tr><tr id='TBL-9-27-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-27-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 81 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-9-28-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-28-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 81 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-9-29-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-29-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-9-29-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
 <div class='center'>
 <!-- l. 86 --><p class='noindent'>
 </p>
-<a id='x1-4r3'></a><!-- l. 92 --><div class='longtable'> <table class='longtable' id='TBL-13'><colgroup id='TBL-13-1g'><col id='TBL-13-1' /><col id='TBL-13-2' /></colgroup>
+<a id='x1-8r3'></a><!-- l. 92 --><div class='longtable'> <table class='longtable' id='TBL-13'><colgroup id='TBL-13-1g'><col id='TBL-13-1' /><col id='TBL-13-2' /></colgroup>
 <tr id='TBL-13-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 2 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-4-1' style='white-space:normal; text-align:left;'>
@@ -242,6 +295,8 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
  <!-- l. 15 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-20-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-20-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-21-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-21-1' style='white-space:normal; text-align:left;'>
  <!-- l. 29 --><p class='noindent'>Hessian                                                                  </p></td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-13-22-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-22-1' style='white-space:normal; text-align:left;'>
  <!-- l. 29 --><p class='noindent'><a href='https://en.wikipedia.org/wiki/Hessian_matrix'>W</a>,    <a href='https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/quadratic-approximations/a/the-hessian'>Kahn    Academy</a>,
   <a href='https://mathworld.wolfram.com/Hessian.html'>Wolfram</a>                                                                 </p></td><td class='td11' id='TBL-13-22-2' style='white-space:normal; text-align:left;'>
@@ -267,7 +322,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
        </p>
 <div class='math-display'>
 <img alt='V(x) ≥ 0    ∀x ∈ R
-' class='math-display' src='main38x.png' /></div>
+' class='math-display' src='main50x.png' /></div>
           <div class='center'>
 <!-- l. 107 --><p class='noindent'>
 </p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is greater than or equal to 0 regardless of </span><span class='zplmr7m-'>x</span><span class='cmssi-10'>)</span></p></div>
@@ -277,7 +332,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
        </p>
 <div class='math-display'>
 <img alt='V(x) = 0 ⇐⇒  x = 0
-' class='math-display' src='main39x.png' /></div>
+' class='math-display' src='main51x.png' /></div>
          <div class='center'>
 <!-- l. 107 --><p class='noindent'>
 </p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
@@ -287,7 +342,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
        </p>
 <div class='math-display'>
 <img alt='V(x) ≤ 0    ∀x ∈ R
-' class='math-display' src='main40x.png' /></div>
+' class='math-display' src='main52x.png' /></div>
           <div class='center'>
 <!-- l. 107 --><p class='noindent'>
 </p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is less than or equal to 0 regardless of </span><span class='zplmr7m-'>x</span><span class='cmssi-10'>)</span></p></div>
@@ -297,7 +352,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
        </p>
 <div class='math-display'>
 <img alt='V(x) = 0 ⇐⇒  x = 0
-' class='math-display' src='main41x.png' /></div>
+' class='math-display' src='main53x.png' /></div>
          <div class='center'>
 <!-- l. 107 --><p class='noindent'>
 </p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
@@ -307,7 +362,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
        </p>
 <div class='math-display'>
 <img alt='V(x) ≥ 0   ∀x ∈ N
-' class='math-display' src='main42x.png' /></div>
+' class='math-display' src='main54x.png' /></div>
      <!-- l. 107 --><p class='noindent'>where <span class='zplmr7m-'>N </span>is a small open neighborhood containing <span class='accentvec'><span class='pplr9t-'>0</span></span> </p>
          <div class='center'>
 <!-- l. 107 --><p class='noindent'>
@@ -320,7 +375,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
        </p>
 <div class='math-display'>
 <img alt='
-' class='math-display' src='main43x.png' /></div>
+' class='math-display' src='main55x.png' /></div>
          <div class='center'>
 <!-- l. 107 --><p class='noindent'>
 </p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
@@ -386,12 +441,33 @@ of the function. (TODO) </p> </div>                                             
 </tr><tr id='TBL-13-51-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-51-1' style='white-space:normal; text-align:left;'>
  <!-- l. 167 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-52-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-52-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-53-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-53-1' style='white-space:normal; text-align:left;'>
- <!-- l. 92 --><p class='noindent'>                                                </p></td>
+ <!-- l. 190 --><p class='noindent'>Hurwitz                                                                  </p></td><td class='td11' id='TBL-13-53-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'>     <ul class='itemize1'>
+     <li class='itemize'><span class='cmssbx-10'>Hurwitz (polynomial)</span>: <br class='newline' />A polynomial whose roots that are all in the left-half plane. (In other words, the real part
+       of every root is strictly negative)
+       </li>
+       <li class='itemize'><span class='cmssbx-10'>Hurwitz (matrix) </span>(<a href='https://en.wikipedia.org/wiki/Hurwitz_matrix'>W</a>): <br class='newline' />A square matrix whose characteristic polynomial is Hurwitz, meaning all eigenvalues are
+       in the left-half plane. (In other words, the real part of every eigenvalue is strictly negative)
+       </li>
+       <li class='itemize'><span class='cmssbx-10'>Routh-Hurwitz stability criterion </span>(<a href='https://ieeexplore.ieee.org/document/165530'>IEEE</a>): <br class='newline' />TODO</li></ul>
+<!-- l. 190 --><p class='noindent'>Any hyperbolic fixed point (or equilibrium point) of a continuous dynamical system is locally
+asymptotically stable if and only if the Jacobian of the dynamical system is Hurwitz stable at the fixed
+point.
+</p><!-- l. 190 --><p class='noindent'>A system is stable if its control matrix is a Hurwitz matrix.
+</p><!-- l. 190 --><p class='noindent'>The negative real components of the eigenvalues of the matrix represent negative feedback. Similarly,
+a system is inherently unstable if any of the eigenvalues have positive real components, representing
+positive feedback. </p> </div>                                                                                                  </td>
 </tr><tr id='TBL-13-55-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-55-1' style='white-space:normal; text-align:left;'>
- <!-- l. 92 --><p class='noindent'>                                                </p></td>
+ <!-- l. 190 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-56-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-56-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 190 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-57-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-57-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-58-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-58-1' style='white-space:normal; text-align:left;'>
  <!-- l. 92 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-57-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-57-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-13-57-2' style='white-space:normal; text-align:left;'></td></tr>
+</tr><tr id='TBL-13-60-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-60-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 92 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-61-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-61-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 92 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-62-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-62-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-13-62-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
     
