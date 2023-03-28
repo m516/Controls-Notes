@@ -28,6 +28,7 @@ jobs:
       - name: Create public folder
         run: |
           mkdir ./public
+          echo "::set-output name=files::$(printf '"%s" ' *.md)"
       
       # Compiles a PDF
       - name: Build Latex PDF
@@ -40,7 +41,7 @@ jobs:
       - name: Build Latex HTML
         uses: docker://pandoc/core:2.9
         with:
-          args: main.tex -o ./public/index.html -t html5
+          args: ${{ steps.files_list.outputs.files }} -o ./public/index.html -t html5
   
       # Uploads the PDF
       - name: Upload artifact
