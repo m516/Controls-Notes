@@ -31,19 +31,23 @@ jobs:
         with:
           root_file: |
             main.tex
+            
+      - name: Create public folder
+        run: |
+          mkdir ./public
       
       # Compiles an HTML wepage (WIP)
       - name: Build Latex HTML
         uses: docker://pandoc/core:2.9
         with:
-          args: "--help" # gets appended to pandoc command
+          args: main.tex -o ./public/index.html -t html5
   
       # Uploads the PDF
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: main.pdf
+          path: ./public/main.pdf
 
       # Publishes the PDF as a release
       - name: Publish PDF
@@ -51,4 +55,11 @@ jobs:
         # if: startsWith(github.ref, 'refs/tags/')
         with:
           tag_name: Current
-          files: main.pdf
+          files: ./public/main.pdf
+          
+      # Publish HTML to GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
