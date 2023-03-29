@@ -213,3 +213,35 @@ The negative real components of the eigenvalues of the matrix represent negative
 
     In other words, when $u=0$, any nonzero state behavior will be observed at the output ($y\neq0$)
 }
+
+
+
+
+
+
+\entry{  
+    Invariant Sets
+}{
+\begin{itemize}
+    \item \textbf{Invariant Set} \\
+    A set of vectors $M$ is invariant with respect to $\dot{x} = f(x)$ if
+    \[
+    x(0) \in M \implies x(t) \in M, \qquad \forall t \in \mathbb{R} 
+    \]
+    \begin{center}
+        \emph{(if a solution belongs to M at some time instant, then it belongs to M for
+all future and past time)}
+    \end{center}
+    
+    \item \textbf{Positively Invariant Set} \\
+    A set of vectors $M$ is positively invariant with respect to $\dot{x} = f(x)$ if
+    \[
+    x(0) \in M \implies x(t) \in M, \qquad \forall t \geq 0
+    \]
+    \begin{center}
+        \emph{(if a solution belongs to M at some time instant, then it belongs to M for
+all future time)}
+    \end{center}
+    
+\end{itemize}
+}
