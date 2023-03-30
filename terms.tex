@@ -157,7 +157,7 @@ Stability is usually used to describe trajectories around the origin of a system
             \textit{($V(x)$ is a locally positive definite function)}
         \end{center}
         \begin{center}\textbf{AND}\end{center}
-        \[\dot{V}(x)=\frac{\partial V}{\partial x} \leq 0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\},\qquad V(\Vec{0})=0\]
+        \[\dot{V}(x)=\frac{\partial V}{\partial x} f(x) \leq 0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\},\qquad V(\Vec{0})=0\]
         \begin{center}
             \textit{($\dot{V}(x)$ is a locally negative semidefinite function)}
         \end{center}
@@ -175,7 +175,7 @@ Stability is usually used to describe trajectories around the origin of a system
     \begin{itemize}
         \item \textbf{In the sense of Lyapunov}\\
         The origin is asymptotically stable in the sense of Lyapunov if stable AND
-        \[\dot{V}(x)=\frac{\partial V}{\partial x} < 0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\}\]
+        \[\dot{V}(x)=\frac{\partial V}{\partial x} f(x) < 0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\}\]
         \begin{center}
             \textit{($\dot{V}(x)$ is a locally negative definite function)}
         \end{center}
@@ -185,7 +185,7 @@ Stability is usually used to describe trajectories around the origin of a system
     \begin{itemize}
         \item \textbf{In the sense of Lyapunov}\\
         The origin is exponentially stable in the sense of Lyapunov if stable AND
-        \[\dot{V}(x)=\frac{\partial V}{\partial x} \leq -\alpha V(x) \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\}\]
+        \[\dot{V}(x)=\frac{\partial V}{\partial x} f(x) \leq -\alpha V(x) \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\}\]
     \end{itemize}
     
     \item \textbf{Uniform stability}\\
