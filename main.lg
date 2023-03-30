@@ -1,3 +1,5 @@
+htfcss: zplmb7t font-weight: bold;
+htfcss: pplb9o font-weight: bold;
 htfcss: cmss   font-family: sans-serif;
 htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
 htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
@@ -9,7 +11,6 @@ htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold
 htfcss: cmssdc  font-family: sans-serif;
 htfcss: cmssi  font-family: sans-serif; font-style: oblique;
 htfcss: cmtt font-family: monospace,monospace;
-htfcss: pplb9o font-weight: bold;
 htfcss: zplmr7m font-style: italic;
 htfcss: cmmi font-style: italic;
 htfcss: cmmib font-style: italic; font-weight: bold;
@@ -225,26 +226,44 @@ Css: td#TBL-9-19-1{border-bottom:0.06999em solid #BFBFBF}
 Css: td#TBL-9-24-1{border-bottom:0.06999em solid #BFBFBF}
 Css:  #TBL-13-8- td{ background-color:#E5F7FF}
 Css: span#textcolor12{color:#0000FF}
-Css: td#TBL-13-20-1{border-bottom:0.06999em solid #BFBFBF}
-Css: td#TBL-13-26-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[20] ==> main78x.png ---
---- needs --- main.idv[21] ==> main79x.png ---
---- needs --- main.idv[22] ==> main80x.png ---
---- needs --- main.idv[23] ==> main81x.png ---
---- needs --- main.idv[24] ==> main82x.png ---
---- needs --- main.idv[25] ==> main83x.png ---
-Css: td#TBL-13-32-1{border-bottom:0.06999em solid #BFBFBF}
-Css: td#TBL-13-37-1{border-bottom:0.06999em solid #BFBFBF}
-Css: td#TBL-13-42-1{border-bottom:0.06999em solid #BFBFBF}
-Css: td#TBL-13-47-1{border-bottom:0.06999em solid #BFBFBF}
-Css: td#TBL-13-52-1{border-bottom:0.06999em solid #BFBFBF}
-Css: td#TBL-13-57-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[27] ==> main84x.png ---
---- needs --- main.idv[28] ==> main85x.png ---
-Css: td#TBL-13-62-1{border-bottom:0.06999em solid #BFBFBF}
---- needs --- main.idv[30] ==> main86x.png ---
---- needs --- main.idv[31] ==> main87x.png ---
-Css: td#TBL-13-67-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[20] ==> main129x.png ---
+--- needs --- main.idv[21] ==> main130x.png ---
+--- needs --- main.idv[22] ==> main131x.png ---
+--- needs --- main.idv[24] ==> main132x.png ---
+--- needs --- main.idv[25] ==> main133x.png ---
+Css: td#TBL-13-19-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-13-24-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-13-29-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[27] ==> main134x.png ---
+--- needs --- main.idv[28] ==> main135x.png ---
+--- needs --- main.idv[29] ==> main136x.png ---
+--- needs --- main.idv[30] ==> main137x.png ---
+--- needs --- main.idv[31] ==> main138x.png ---
+--- needs --- main.idv[32] ==> main139x.png ---
+Css: td#TBL-13-34-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[34] ==> main140x.png ---
+--- needs --- main.idv[35] ==> main141x.png ---
+--- needs --- main.idv[36] ==> main142x.png ---
+--- needs --- main.idv[37] ==> main143x.png ---
+--- needs --- main.idv[38] ==> main144x.png ---
+--- needs --- main.idv[39] ==> main145x.png ---
+--- needs --- main.idv[40] ==> main146x.png ---
+--- needs --- main.idv[41] ==> main147x.png ---
+--- needs --- main.idv[42] ==> main148x.png ---
+--- needs --- main.idv[43] ==> main149x.png ---
+--- needs --- main.idv[44] ==> main150x.png ---
+Css: td#TBL-13-39-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-13-44-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[46] ==> main151x.png ---
+Css: td#TBL-13-49-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-13-54-1{border-bottom:0.06999em solid #BFBFBF}
+Css: td#TBL-13-59-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[48] ==> main152x.png ---
+--- needs --- main.idv[49] ==> main153x.png ---
+Css: td#TBL-13-64-1{border-bottom:0.06999em solid #BFBFBF}
+--- needs --- main.idv[51] ==> main154x.png ---
+--- needs --- main.idv[52] ==> main155x.png ---
+Css: td#TBL-13-69-1{border-bottom:0.06999em solid #BFBFBF}
 --- characters ---
 Font("cmss","10","10","100")
 Font("cmss","17","17","100")
@@ -263,3 +282,4 @@ Font("cmtt","10","10","100")
 Font("cmssbx","10","10","100")
 Font("fplmbb","","10","100")
 Font("cmssi","10","10","100")
+Font("zplmb7t","","10","100")

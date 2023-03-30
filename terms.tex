@@ -5,9 +5,33 @@
 
 
 \entry{  
-    Lipschitz Continuity \\
-    \href{https://en.wikipedia.org/wiki/Lipschitz_continuity}{W},
-    \href{https://math.berkeley.edu/~mgu/MA128ASpring2017/MA128ALectureWeek9.pdf}{UC Berkley}
+    Classes of Systems
+}{
+    Given a dynamic system
+    
+    \begin{itemize}
+        \setlength\itemsep{2em}
+        \item \textbf{Dynamic system}
+        \[\dot{x} = f(x, u, t)\]
+        \item \textbf{Time-invariant system} is a dynamic system
+        \[\dot{x} = f(x, u)\]
+        \item \textbf{Autonomous system} is a dynamic system
+        \[\dot{x} = f(x, t)\]
+        \item \textbf{Linear system}
+        (\href{https://en.wikipedia.org/wiki/Linear_system}{W})
+        is a dynamic system
+        \[\dot{x} = f(x, u, t) = A(t) x + B(t) u\]
+        \item \textbf{Linear time-invariant system} is a linear system and a time-invariant system
+        \[\dot{x} = f(x, u) = A x + B u\]
+    \end{itemize}
+}
+
+
+
+\entry{  
+    Lipschitz Continuity
+    (\href{https://en.wikipedia.org/wiki/Lipschitz_continuity}{W},)
+    (\href{https://math.berkeley.edu/~mgu/MA128ASpring2017/MA128ALectureWeek9.pdf}{UC Berkley})
 }{
     Lipschitz continuous functions are continuous and differentiable almost anywhere in a domain. \\\\
     Given a domain $D$ and a function $f: D \rightarrow \mathbb{R}, D \in \mathbb{R}^n$, \\
@@ -17,10 +41,10 @@
 
 
 \entry{  
-    Hessian \\
-    \href{https://en.wikipedia.org/wiki/Hessian_matrix}{W},
-    \href{https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/quadratic-approximations/a/the-hessian}{Kahn Academy},
-    \href{https://mathworld.wolfram.com/Hessian.html}{Wolfram}
+    Hessian
+    (\href{https://en.wikipedia.org/wiki/Hessian_matrix}{W}),
+    (\href{https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/quadratic-approximations/a/the-hessian}{Kahn Academy}),
+    (\href{https://mathworld.wolfram.com/Hessian.html}{Wolfram})
 }{
 \begin{itemize}
     \item A $2n$ x $2n$ matrix of all 2nd order partial derivatives of some function $f : \mathbb{R}^n \rightarrow \mathbb{R}$
@@ -31,14 +55,15 @@
 
 
 \entry{  
-    definite \\
-    \href{https://en.wikipedia.org/wiki/Positive-definite_function}{W}
+    definite
+    (\href{https://en.wikipedia.org/wiki/Positive-definite_function}{W})
 }{
 \emph{Warning: this definition does not appear to be common outside of controls}\\
 
 Given a real-valued, continuously differentiable function $V(x) : \mathbb{R} \rightarrow \mathbb{R}$ \\
 $V(x)$ can be classified as
 \begin{itemize}
+    \setlength\itemsep{2em}
     \item 
         \textbf{(globally) positive semidefinite} if 
         \[
@@ -112,18 +137,82 @@ $V(x)$ can be classified as
 
 
 \entry{  
-    Stability
+    Stability 
+    (\href{http://underactuated.mit.edu/lyapunov.html}{MIT})
 }{
+Given an autonomous system \[\dot{x} = f(x, t)\] and some open connected region $\mathcal{D}$ containing $\Vec{0}$\\
+
+Stability is usually used to describe trajectories around the origin of a system.\\
+
 \begin{itemize}
-    \item (Lyapunov) stability (TODO)
-    \item Asymptotic stability  (TODO)
-    \item Exponential stability (TODO)
-    \item Uniform stability (TODO)
-    \item Global stability (TODO)
-    \item L-stability (TODO)
-    \item I/O L-stability (TODO)
-    \item Small-signal I/O L-stability (TODO)
-    \item Small-signal finite-gain L-stability (TODO)
+    \setlength\itemsep{2em}
+    \item \textbf{Stability}\\
+    The equilibrium point $x=0$ is stable if $\forall \epsilon>0$, $\exists \delta(\epsilon)>0$ such that $\norm{x(0)}<\delta \implies \norm{x(t)}<\epsilon$
+
+    \begin{itemize}
+        \item \textbf{In the sense of Lyapunov}\\
+        If there exists a scalar, continuously-differentiable function $V(x)$ such that
+        \[V(x)>0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\},\qquad V(\Vec{0})=0\]
+        \begin{center}
+            \textit{($V(x)$ is a locally positive definite function)}
+        \end{center}
+        \begin{center}\textbf{AND}\end{center}
+        \[\dot{V}(x)=\frac{\partial V}{\partial x} \leq 0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\},\qquad V(\Vec{0})=0\]
+        \begin{center}
+            \textit{($\dot{V}(x)$ is a locally negative semidefinite function)}
+        \end{center}
+        then the origin is stable in the sense of Lyapunov, and $V(x)$ is a Lyapunov function of $f(x)$.
+    \end{itemize}
+    
+    
+    \item \textbf{Instability}\\
+    The equilibrium point $x=0$ is unstable if it is not stable
+    
+    
+    \item \textbf{Asymptotic stability}\\
+    The equilibrium point $x=0$ is asymptotically stable if it is stable and $\exists \delta_1$ such that $\norm{x(0)}<\delta_1 \implies \lim\limits_{t\rightarrow\infty}x(t)=0$
+
+    \begin{itemize}
+        \item \textbf{In the sense of Lyapunov}\\
+        The origin is asymptotically stable in the sense of Lyapunov if stable AND
+        \[\dot{V}(x)=\frac{\partial V}{\partial x} < 0 \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\}\]
+        \begin{center}
+            \textit{($\dot{V}(x)$ is a locally negative definite function)}
+        \end{center}
+    \end{itemize}
+    
+    \item \textbf{Exponential stability}\\  
+    \begin{itemize}
+        \item \textbf{In the sense of Lyapunov}\\
+        The origin is exponentially stable in the sense of Lyapunov if stable AND
+        \[\dot{V}(x)=\frac{\partial V}{\partial x} \leq -\alpha V(x) \quad \forall x \in \mathcal{D}\setminus\left\{\Vec{0}\right\}\]
+    \end{itemize}
+    
+    \item \textbf{Uniform stability}\\
+    The equilibrium point $x=0$ is uniformly stable if it is stable and, for each $epsilon>0$, there exists a $\delta(\epsilon)>0$, independent of $t_0$.
+    
+    \item \textbf{Global asymptotic stability}\\
+    \begin{itemize}
+        \item \textbf{In the sense of Lyapunov}\\
+        If the origin is globally asymptotically stable in the sense of Lyapunov if is asymptotically stable and 
+        \[\norm{x}\rightarrow\inf \implies V(x)\rightarrow\inf\]
+        \begin{center}
+            \textit{($V(x)$ is radially unbounded)}
+        \end{center}
+    \end{itemize}
+    
+    \item \textbf{Global exponential stability}\\ (TODO)
+    
+    \item \textbf{L-stability}\\ (TODO)
+    
+    \item \textbf{I/O L-stability}\\ (TODO)
+    
+    \item \textbf{Finite-gain L-stability}\\ (TODO)
+    
+    \item \textbf{Small-signal I/O L-stability}\\ (TODO)
+    
+    \item \textbf{Small-signal finite-gain L-stability}\\ (TODO)
+    
     
 \end{itemize} 
 }
@@ -134,10 +223,25 @@ $V(x)$ can be classified as
 
 
 \entry{  
-    Class K function
+    Class $\kappa$ function
 }{
+A continuous scalar function on $\mathbf{R}^+$ is 
+
 \begin{itemize}
-    \item (TODO)
+    \item \textbf{class $\kappa$} if it is:
+    \begin{itemize}
+        \item zero at zero
+        \item strictly increasing
+        \item continuous
+    \end{itemize}
+    
+    \item \textbf{class $\kappa_\infty$} if it is:
+    \begin{itemize}
+        \item zero at zero
+        \item strictly increasing
+        \item continuous
+        \item $\inf$ at $\inf$
+    \end{itemize}
 \end{itemize} 
 }
 
@@ -149,9 +253,8 @@ $V(x)$ can be classified as
 \entry{  
     Radially Unbounded function
 }{
-\begin{itemize}
-    \item (TODO)
-\end{itemize} 
+A function $V(x)$ is radially unbounded if 
+\[\norm{x}\rightarrow\inf \implies V(x)\rightarrow\inf\]
 }
 
 

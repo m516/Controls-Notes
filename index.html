@@ -15,15 +15,15 @@
 
 <h2 class='titleHead'>Controls Notes</h2>
  <div class='author'><span class='cmss-12'>M516</span></div><br />
-<div class='date'><span class='cmss-12'>March 29, 2023</span></div>
+<div class='date'><span class='cmss-12'>March 30, 2023</span></div>
    </div>
-<!-- l. 58 --><p class='indent'>   This document is an ongoing collection of symbols, theorems, tools, and terms I have found useful for studying control theory, available
+<!-- l. 59 --><p class='indent'>   This document is an ongoing collection of symbols, theorems, tools, and terms I have found useful for studying control theory, available
 as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/main.pdf'>PDF</a>, <a href='https://m516.github.io/Controls-Notes/'>HTML</a>, and <a href='https://github.com/m516/Controls-Notes'>LaTeXsource code</a>.
 </p>
 <div class='center'>
-<!-- l. 64 --><p class='noindent'>
+<!-- l. 65 --><p class='noindent'>
 </p>
-<a id='x1-2r1'></a><!-- l. 70 --><div class='longtable'> <table class='longtable' id='TBL-5'><colgroup id='TBL-5-1g'><col id='TBL-5-1' /><col id='TBL-5-2' /></colgroup>
+<a id='x1-2r1'></a><!-- l. 71 --><div class='longtable'> <table class='longtable' id='TBL-5'><colgroup id='TBL-5-1g'><col id='TBL-5-1' /><col id='TBL-5-2' /></colgroup>
 <tr id='TBL-5-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 1 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-4-1' style='white-space:normal; text-align:left;'>
@@ -42,6 +42,8 @@ as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/mai
      <li class='itemize'>state vector (state space) (<a href='https://en.wikipedia.org/wiki/State_space'>W</a>) <br class='newline' />Type: <span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup></li></ul> </div>                                                                                                          </td>
 </tr><tr id='TBL-5-17-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-17-1' style='white-space:normal; text-align:left;'>
  <!-- l. 12 --><p class='noindent'>                                                </p></td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-5-18-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-18-1' style='white-space:normal; text-align:left;'>
  <!-- l. 12 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-19-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-5-19-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-5-20-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-20-1' style='white-space:normal; text-align:left;'>
@@ -56,8 +58,7 @@ as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/mai
                    <!-- l. 31 --><p class='noindent'>Assuming discrete time linear system:
               </p>
 <div class='math-display'>
-<img alt='                  T
-Hk = L (xk,uk,k)+ pk+ 1f(xk,uk,k)
+<img alt='Hk = L (xk,uk,k)+ pTk+ 1f(xk,uk,k)
 ' class='math-display' src='main27x.png' /></div>
               </li></ul>
         </li></ul> </div>                                                                                                                                       </td>
@@ -80,8 +81,9 @@ Hk = L (xk,uk,k)+ pk+ 1f(xk,uk,k)
        </li>
        <li class='itemize'><span class='zplmr7m-'>C</span><sup><span class='zplmr7m-x-x-76'>n</span></sup> = The <span class='zplmr7m-'>n</span><sup>th</sup> derivative is continuous.
        </li>
-       <li class='itemize'><span class='fplmbb-'>C</span>: the set of all complex numbers <span class='zplmr7m-'>a</span><span class='zplmr7t-'>+ </span><span class='zplmr7m-'>bi </span>where <span class='zplmr7m-'>a </span>and <span class='zplmr7m-'>b </span>are real and <span class='zplmr7m-'>i </span><span class='zplmr7t-'>=</span> <img alt='                  √---
-                   − 1' class='sqrt' src='main28x.png' /></li></ul> </div>                                          </td>
+       <li class='itemize'><span class='fplmbb-'>C</span>: the set of all complex numbers <span class='zplmr7m-'>a</span><span class='zplmr7t-'>+ </span><span class='zplmr7m-'>bi </span>where <span class='zplmr7m-'>a </span>and <span class='zplmr7m-'>b </span>are real and <span class='zplmr7m-'>i </span><span class='zplmr7t-'>=</span> <img alt='                  √−-1' class='sqrt' src='main28x.png' /></li></ul> </div>                                          </td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-5-32-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-32-1' style='white-space:normal; text-align:left;'>
  <!-- l. 54 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-33-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-33-1' style='white-space:normal; text-align:left;'>
@@ -121,8 +123,8 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
    </p><!-- l. 102 --><p class='noindent'>Note that if <span class='zplmr7m-'>n </span><span class='zplmr7t-'>= </span><span class='pplr9t-'>1</span>, <span class='zplmr7y-'>∇</span><span class='zplmr7m-'>f </span>is the standard derivative of <span class='zplmr7m-'>f</span>. <br class='newline' />Formally speaking:
        </p>
 <div class='math-display'>
-<img alt='      n
-∇f = ∑  ∂f-ei
+<img alt='      n ∂f
+∇f = ∑  ---ei
      i=1∂xi
 ' class='math-display' src='main31x.png' /></div>
       </li>
@@ -134,8 +136,7 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
      <!-- l. 102 --><p class='noindent'><span class='zplmr7t-'>Δ</span><span class='zplmr7m-'>f</span>: the Laplace operator on a function <span class='zplmr7m-'>f </span><span class='zplmr7t-'>: </span><span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup> <span class='zplmr7y-'>→</span><span class='fplmbb-'>R</span>, equivalent to the divergence of the gradient of <span class='zplmr7m-'>f</span>, i.e.
        </p>
 <div class='math-display'>
-<img alt='      2
-δf = ∇  f = ∇ ⋅∇f
+<img alt='δf = ∇ 2f = ∇ ⋅∇f
 ' class='math-display' src='main32x.png' /></div>
      </li></ul> </div>                                                                                        </td>
 </tr><tr id='TBL-5-42-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-42-1' style='white-space:normal; text-align:left;'>
@@ -146,8 +147,6 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
  <!-- l. 113 --><p class='noindent'><span class='zplmr7m-'>J</span>                                                 </p></td><td class='td11' id='TBL-5-45-2' style='white-space:normal; text-align:left;'>
  <div class='minipage'>     <ul class='itemize1'>
      <li class='itemize'>Cost to go function <br class='newline' />type: <span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup> <span class='zplmr7y-'>→</span><span class='fplmbb-'>R</span></li></ul> </div>                                                                                                                                                           </td>
-                                                                                                       
-                                                                                                       
 </tr><tr id='TBL-5-47-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-47-1' style='white-space:normal; text-align:left;'>
  <!-- l. 113 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-48-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-48-1' style='white-space:normal; text-align:left;'>
@@ -183,20 +182,20 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 </tr><tr id='TBL-5-63-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-63-1' style='white-space:normal; text-align:left;'>
  <!-- l. 144 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-64-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-5-64-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-5-65-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-65-1' style='white-space:normal; text-align:left;'>
- <!-- l. 70 --><p class='noindent'>                                                </p></td>
+ <!-- l. 71 --><p class='noindent'>                                                </p></td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-5-67-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-67-1' style='white-space:normal; text-align:left;'>
- <!-- l. 70 --><p class='noindent'>                                                </p></td>
+ <!-- l. 71 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-68-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-68-1' style='white-space:normal; text-align:left;'>
- <!-- l. 70 --><p class='noindent'>                                                </p></td>
+ <!-- l. 71 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-69-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-69-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-5-69-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
 <div class='center'>
-                                                                                                       
-                                                                                                       
-<!-- l. 75 --><p class='noindent'>
+<!-- l. 76 --><p class='noindent'>
 </p>
-<a id='x1-6r2'></a><!-- l. 81 --><div class='longtable'> <table class='longtable' id='TBL-9'><colgroup id='TBL-9-1g'><col id='TBL-9-1' /><col id='TBL-9-2' /></colgroup>
+<a id='x1-6r2'></a><!-- l. 82 --><div class='longtable'> <table class='longtable' id='TBL-9'><colgroup id='TBL-9-1g'><col id='TBL-9-1' /><col id='TBL-9-2' /></colgroup>
 <tr id='TBL-9-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 1 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-4-1' style='white-space:normal; text-align:left;'>
@@ -236,8 +235,8 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 <!-- l. 59 --><p class='noindent'>By the definition of finite-gain <span class='zplmr7y-'>ℒ</span><sub><span class='zplmr7m-x-x-76'>p</span></sub>-stable,
 </p>
 <div class='math-display'>
-<img alt='∥   ∥
-∥y 1τ∥ℒp ≤ γ1∥e1τ∥ℒp + β1
+<img alt='∥∥y  ∥∥   ≤ γ ∥e  ∥  + β
+   1τ ℒp    1  1τ ℒp   1
 ' class='math-display' src='main45x.png' /></div>
 <div class='center'>
 <!-- l. 59 --><p class='noindent'>
@@ -249,16 +248,16 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 </p><!-- l. 59 --><p class='noindent'>Likewise,
 </p>
 <div class='math-display'>
-<img alt='∥∥   ∥∥
-  y2τ ℒp ≤ γ2∥e2τ∥ℒp + β2
+<img alt='∥   ∥
+∥y 2τ∥ℒp ≤ γ2∥e2τ∥ℒp + β2
 ' class='math-display' src='main46x.png' /></div>
 <!-- l. 59 --><p class='noindent'>The Small-gain Theorem tells us,
 </p>
 <table class='equation'><tr><td>
 <div class='math-display'>
 <img alt='∥∥###∥∥            (                             )     (                  )
-∥∥y1τ∥∥  ≤ ----1--- ∥u  ∥  + γ ∥u  ∥   + γ β + β   = γ  some ℒ -stable system
-∥∥y2τ∥∥    1 − γ1γ2   1τ ℒp    2 2τ ℒp    2 1   2     3       p
+∥∥y1τ∥∥  ≤ ----1--- ∥u1τ∥  + γ 2∥u2τ∥   + γ2β1+ β2  = γ3 some ℒp-stable system
+∥∥y2τ∥∥    1 − γ1γ2      ℒp         ℒp
      ℒp
 ' class='math-display' src='main47x.png' /><a id='x1-7r1'></a></div>
 </td><td class='equation-label'>(1)</td></tr></table>
@@ -272,18 +271,18 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 </tr><tr id='TBL-9-23-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-23-1' style='white-space:normal; text-align:left;'>
  <!-- l. 59 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-24-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-9-24-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-9-25-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-25-1' style='white-space:normal; text-align:left;'>
- <!-- l. 81 --><p class='noindent'>                                                </p></td>
+ <!-- l. 82 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-27-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-27-1' style='white-space:normal; text-align:left;'>
- <!-- l. 81 --><p class='noindent'>                                                </p></td>
+ <!-- l. 82 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-28-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-28-1' style='white-space:normal; text-align:left;'>
- <!-- l. 81 --><p class='noindent'>                                                </p></td>
+ <!-- l. 82 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-29-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-29-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-9-29-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
 <div class='center'>
-<!-- l. 86 --><p class='noindent'>
+<!-- l. 87 --><p class='noindent'>
 </p>
-<a id='x1-8r3'></a><!-- l. 92 --><div class='longtable'> <table class='longtable' id='TBL-13'><colgroup id='TBL-13-1g'><col id='TBL-13-1' /><col id='TBL-13-2' /></colgroup>
+<a id='x1-8r3'></a><!-- l. 93 --><div class='longtable'> <table class='longtable' id='TBL-13'><colgroup id='TBL-13-1g'><col id='TBL-13-1' /><col id='TBL-13-2' /></colgroup>
 <tr id='TBL-13-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 2 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-4-1' style='white-space:normal; text-align:left;'>
@@ -296,165 +295,312 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
  <!-- l. 2 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-14-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-14-1' style='white-space:normal; text-align:left;'>
  <!-- l. 2 --><p class='noindent'>                                                </p></td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-13-15-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-15-1' style='white-space:normal; text-align:left;'>
- <!-- l. 15 --><p class='noindent'>Lipschitz Continuity                                                   </p></td>
-</tr><tr id='TBL-13-16-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-16-1' style='white-space:normal; text-align:left;'>
- <!-- l. 15 --><p class='noindent'><a href='https://en.wikipedia.org/wiki/Lipschitz_continuity'>W</a>, <a href='https://math.berkeley.edu/~mgu/MA128ASpring2017/MA128ALectureWeek9.pdf'>UC Berkley</a>                                                         </p></td><td class='td11' id='TBL-13-16-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'><!-- l. 15 --><p class='noindent'>Lipschitz continuous functions are continuous and differentiable almost anywhere in a domain.
-<br class='newline' /><br class='newline' />Given a domain <span class='zplmr7m-'>D </span>and a function <span class='zplmr7m-'>f </span><span class='zplmr7t-'>: </span><span class='zplmr7m-'>D </span><span class='zplmr7y-'>→</span><span class='fplmbb-'>R</span><span class='pplr9t-'>, </span><span class='zplmr7m-'>D </span><span class='zplmr7y-'>∈</span><span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup>, <br class='newline' /><span class='zplmr7m-'>f </span>is Lipschitz continuous if <span class='zplmr7y-'>∃</span><span class='zplmr7m-'>L &gt; </span><span class='pplr9t-'>0 </span>such that <span class='zplmr7y-'>|</span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='zplmr7y-'>−</span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>y</span><span class='zplmr7t-'>)</span><span class='zplmr7y-'>| </span><span class='zplmr7m-'>&lt; L</span><span class='zplmr7y-'>||</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7y-'>−</span><span class='zplmr7m-'>y</span><span class='zplmr7t-'>)</span><span class='zplmr7y-'>||∀</span><span class='zplmr7m-'>x</span><span class='pplr9t-'>, </span><span class='zplmr7m-'>y </span><span class='zplmr7y-'>∈ </span><span class='zplmr7m-'>D</span> </p> </div>         </td>
+ <!-- l. 27 --><p class='noindent'>Classes of Systems                                                    </p></td><td class='td11' id='TBL-13-15-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 27 --><p class='noindent'>Given a dynamic system
+</p>
+       <ul class='itemize1'>
+       <li class='itemize'>
+       <!-- l. 27 --><p class='noindent'><span class='cmssbx-10'>Dynamic system</span>
+       </p>
+<div class='math-display'>
+<img alt='x˙= f(x,u,t)
+' class='math-display' src='main129x.png' /></div>
+        </li>
+        <li class='itemize'>
+        <!-- l. 27 --><p class='noindent'><span class='cmssbx-10'>Time-invariant system </span>is a dynamic system
+       </p>
+<div class='math-display'>
+<img alt='x˙= f(x,u)
+' class='math-display' src='main130x.png' /></div>
+        </li>
+        <li class='itemize'>
+        <!-- l. 27 --><p class='noindent'><span class='cmssbx-10'>Autonomous system </span>is a dynamic system
+       </p>
+<div class='math-display'>
+<img alt='x˙= f(x,t)
+' class='math-display' src='main131x.png' /></div>
+        </li>
+        <li class='itemize'>
+        <!-- l. 27 --><p class='noindent'><span class='cmssbx-10'>Linear system </span>(<a href='https://en.wikipedia.org/wiki/Linear_system'>W</a>) is a dynamic system
+       </p>
+<div class='math-display'>
+<img alt='x˙= f(x,u,t) = A(t)x + B(t)u
+' class='math-display' src='main132x.png' /></div>
+     </li>
+     <li class='itemize'>
+     <!-- l. 27 --><p class='noindent'><span class='cmssbx-10'>Linear time-invariant system </span>is a linear system and a time-invariant system
+       </p>
+<div class='math-display'>
+<img alt='x˙= f(x,u) = Ax + Bu
+' class='math-display' src='main133x.png' /></div>
+     </li></ul> </div>                                                                         </td>
+                                                                                                       
+                                                                                                       
+</tr><tr id='TBL-13-17-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-17-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 27 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-18-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-18-1' style='white-space:normal; text-align:left;'>
- <!-- l. 15 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-19-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-19-1' style='white-space:normal; text-align:left;'>
- <!-- l. 15 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-20-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-20-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-21-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-21-1' style='white-space:normal; text-align:left;'>
- <!-- l. 29 --><p class='noindent'>Hessian                                                                  </p></td>
-                                                                                                       
-                                                                                                       
+ <!-- l. 27 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-19-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-19-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-20-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-20-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 39 --><p class='noindent'>Lipschitz      Continuity
+  (<a href='https://en.wikipedia.org/wiki/Lipschitz_continuity'>W</a>,) (<a href='https://math.berkeley.edu/~mgu/MA128ASpring2017/MA128ALectureWeek9.pdf'>UC Berkley</a>)                                                    </p></td><td class='td11' id='TBL-13-20-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 39 --><p class='noindent'>Lipschitz continuous functions are continuous and differentiable almost anywhere in a domain.
+<br class='newline' /><br class='newline' />Given a domain <span class='zplmr7m-'>D </span>and a function <span class='zplmr7m-'>f </span><span class='zplmr7t-'>: </span><span class='zplmr7m-'>D </span><span class='zplmr7y-'>→</span><span class='fplmbb-'>R</span><span class='pplr9t-'>, </span><span class='zplmr7m-'>D </span><span class='zplmr7y-'>∈</span><span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup>, <br class='newline' /><span class='zplmr7m-'>f </span>is Lipschitz continuous if <span class='zplmr7y-'>∃</span><span class='zplmr7m-'>L &gt; </span><span class='pplr9t-'>0 </span>such that <span class='zplmr7y-'>|</span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='zplmr7y-'>−</span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>y</span><span class='zplmr7t-'>)</span><span class='zplmr7y-'>| </span><span class='zplmr7m-'>&lt; L</span><span class='zplmr7y-'>||</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7y-'>−</span><span class='zplmr7m-'>y</span><span class='zplmr7t-'>)</span><span class='zplmr7y-'>||∀</span><span class='zplmr7m-'>x</span><span class='pplr9t-'>, </span><span class='zplmr7m-'>y </span><span class='zplmr7y-'>∈ </span><span class='zplmr7m-'>D</span> </p> </div>         </td>
 </tr><tr id='TBL-13-22-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-22-1' style='white-space:normal; text-align:left;'>
- <!-- l. 29 --><p class='noindent'><a href='https://en.wikipedia.org/wiki/Hessian_matrix'>W</a>,    <a href='https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/quadratic-approximations/a/the-hessian'>Kahn    Academy</a>,
-  <a href='https://mathworld.wolfram.com/Hessian.html'>Wolfram</a>                                                                 </p></td><td class='td11' id='TBL-13-22-2' style='white-space:normal; text-align:left;'>
+ <!-- l. 39 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-23-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-23-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 39 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-24-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-24-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-25-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-25-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 53 --><p class='noindent'>Hessian   (<a href='https://en.wikipedia.org/wiki/Hessian_matrix'>W</a>),   (<a href='https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/quadratic-approximations/a/the-hessian'>Kahn
+  Academy</a>), (<a href='https://mathworld.wolfram.com/Hessian.html'>Wolfram</a>)                                                </p></td><td class='td11' id='TBL-13-25-2' style='white-space:normal; text-align:left;'>
  <div class='minipage'>     <ul class='itemize1'>
      <li class='itemize'>A <span class='pplr9t-'>2</span><span class='zplmr7m-'>n </span>x <span class='pplr9t-'>2</span><span class='zplmr7m-'>n </span>matrix of all 2nd order partial derivatives of some function <span class='zplmr7m-'>f </span><span class='zplmr7t-'>: </span><span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup> <span class='zplmr7y-'>→</span><span class='fplmbb-'>R</span>
           </li>
           <li class='itemize'>The determinant of a Hessian matrix</li></ul> </div>                                                                  </td>
-</tr><tr id='TBL-13-24-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-24-1' style='white-space:normal; text-align:left;'>
- <!-- l. 29 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-25-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-25-1' style='white-space:normal; text-align:left;'>
- <!-- l. 29 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-26-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-26-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-27-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-27-1' style='white-space:normal; text-align:left;'>
- <!-- l. 107 --><p class='noindent'>definite                                                                   </p></td>
-                                                                                                       
-                                                                                                       
+</tr><tr id='TBL-13-27-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-27-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 53 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-28-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-28-1' style='white-space:normal; text-align:left;'>
- <!-- l. 107 --><p class='noindent'><a href='https://en.wikipedia.org/wiki/Positive-definite_function'>W</a>                                                                         </p></td><td class='td11' id='TBL-13-28-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>Warning: this definition does not appear to be common outside of controls</span><br class='newline' />
-</p><!-- l. 107 --><p class='noindent'>Given a real-valued, continuously differentiable function <span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) : </span><span class='fplmbb-'>R </span><span class='zplmr7y-'>→</span><span class='fplmbb-'>R </span><br class='newline' /><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>can be classified as </p>
+ <!-- l. 53 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-29-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-29-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-30-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-30-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 132 --><p class='noindent'>definite (<a href='https://en.wikipedia.org/wiki/Positive-definite_function'>W</a>)                                                             </p></td><td class='td11' id='TBL-13-30-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>Warning: this definition does not appear to be common outside of controls</span><br class='newline' />
+</p><!-- l. 132 --><p class='noindent'>Given a real-valued, continuously differentiable function <span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) : </span><span class='fplmbb-'>R </span><span class='zplmr7y-'>→</span><span class='fplmbb-'>R </span><br class='newline' /><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>can be classified as </p>
        <ul class='itemize1'>
        <li class='itemize'>
-       <!-- l. 107 --><p class='noindent'><span class='cmssbx-10'>(globally) positive semidefinite </span>if
+       <!-- l. 132 --><p class='noindent'><span class='cmssbx-10'>(globally) positive semidefinite </span>if
        </p>
 <div class='math-display'>
 <img alt='V(x) ≥ 0    ∀x ∈ R
-' class='math-display' src='main78x.png' /></div>
+' class='math-display' src='main134x.png' /></div>
           <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is greater than or equal to 0 regardless of </span><span class='zplmr7m-'>x</span><span class='cmssi-10'>)</span></p></div>
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is greater than or equal to 0 regardless of </span><span class='zplmr7m-'>x</span><span class='cmssi-10'>)</span></p></div>
        </li>
        <li class='itemize'>
-       <!-- l. 107 --><p class='noindent'><span class='cmssbx-10'>(globally) positive definite </span>if positive semidefinite AND
+       <!-- l. 132 --><p class='noindent'><span class='cmssbx-10'>(globally) positive definite </span>if positive semidefinite AND
        </p>
 <div class='math-display'>
 <img alt='V(x) = 0 ⇐⇒  x = 0
-' class='math-display' src='main79x.png' /></div>
+' class='math-display' src='main135x.png' /></div>
          <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
        </li>
        <li class='itemize'>
-       <!-- l. 107 --><p class='noindent'><span class='cmssbx-10'>(globally) negative semidefinite </span>if
+       <!-- l. 132 --><p class='noindent'><span class='cmssbx-10'>(globally) negative semidefinite </span>if
        </p>
 <div class='math-display'>
 <img alt='V(x) ≤ 0    ∀x ∈ R
-' class='math-display' src='main80x.png' /></div>
+' class='math-display' src='main136x.png' /></div>
           <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is less than or equal to 0 regardless of </span><span class='zplmr7m-'>x</span><span class='cmssi-10'>)</span></p></div>
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is less than or equal to 0 regardless of </span><span class='zplmr7m-'>x</span><span class='cmssi-10'>)</span></p></div>
        </li>
        <li class='itemize'>
-       <!-- l. 107 --><p class='noindent'><span class='cmssbx-10'>(globally) negative definite </span>if negative semidefinite AND
+       <!-- l. 132 --><p class='noindent'><span class='cmssbx-10'>(globally) negative definite </span>if negative semidefinite AND
        </p>
 <div class='math-display'>
 <img alt='V(x) = 0 ⇐⇒  x = 0
-' class='math-display' src='main81x.png' /></div>
+' class='math-display' src='main137x.png' /></div>
          <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
        </li>
        <li class='itemize'>
-       <!-- l. 107 --><p class='noindent'><span class='cmssbx-10'>locally positive definite (l.p.d) </span>if
+       <!-- l. 132 --><p class='noindent'><span class='cmssbx-10'>locally positive definite (l.p.d) </span>if
        </p>
 <div class='math-display'>
 <img alt='V(x) ≥ 0   ∀x ∈ N
-' class='math-display' src='main82x.png' /></div>
-     <!-- l. 107 --><p class='noindent'>where <span class='zplmr7m-'>N </span>is a small open neighborhood containing <span class='accentvec'><span class='pplr9t-'>0</span></span> </p>
+' class='math-display' src='main138x.png' /></div>
+     <!-- l. 132 --><p class='noindent'>where <span class='zplmr7m-'>N </span>is a small open neighborhood containing <span class='accentvec'><span class='pplr9t-'>0</span></span> </p>
          <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is greater than or equal to 0 regardless of </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>in some small open neighborhood </span><span class='zplmr7m-'>N </span><span class='cmssi-10'>that
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>v </span><span class='cmssi-10'>is greater than or equal to 0 regardless of </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>in some small open neighborhood </span><span class='zplmr7m-'>N </span><span class='cmssi-10'>that
 </span><span class='cmssi-10'>contains the zero vector)</span></p></div>
        <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssbx-10'>AND</span></p></div>
-       <!-- l. 107 --><p class='noindent'>
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssbx-10'>AND</span></p></div>
+       <!-- l. 132 --><p class='noindent'>
        </p>
 <div class='math-display'>
 <img alt='
-' class='math-display' src='main83x.png' /></div>
+' class='math-display' src='main139x.png' /></div>
          <div class='center'>
-<!-- l. 107 --><p class='noindent'>
-</p><!-- l. 107 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
-       <!-- l. 107 --><p class='noindent'>Note that the criteria for a function to be locally positive definite are similar, but more relaxed
+<!-- l. 132 --><p class='noindent'>
+</p><!-- l. 132 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is zero if and only if </span><span class='zplmr7m-'>x </span><span class='cmssi-10'>is zero)</span></p></div>
+       <!-- l. 132 --><p class='noindent'>Note that the criteria for a function to be locally positive definite are similar, but more relaxed
        than, those for globally positive definite functions.
        </p></li>
        <li class='itemize'><span class='cmssbx-10'>positive definite on some domain </span><span class='zplmr7m-'>D </span><span class='zplmr7y-'>∈</span><span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup> if <br class='newline' />we only care if the conditions for positive definite functions hold for all <span class='zplmr7m-'>x </span>in <span class='zplmr7m-'>D</span>.
 </li></ul> </div>                                                                                                                 </td>
                                                                                                        
                                                                                                        
-</tr><tr id='TBL-13-30-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-30-1' style='white-space:normal; text-align:left;'>
- <!-- l. 107 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-31-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-31-1' style='white-space:normal; text-align:left;'>
- <!-- l. 107 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-32-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-32-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-33-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-33-1' style='white-space:normal; text-align:left;'>
- <!-- l. 129 --><p class='noindent'>Stability                                                                  </p></td><td class='td11' id='TBL-13-33-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'>     <ul class='itemize1'>
-     <li class='itemize'>(Lyapunov) stability (TODO)
+</tr><tr id='TBL-13-32-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-32-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 132 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-33-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-33-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 132 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-34-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-34-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-35-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-35-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 218 --><p class='noindent'>Stability (<a href='http://underactuated.mit.edu/lyapunov.html'>MIT</a>)                                                         </p></td><td class='td11' id='TBL-13-35-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 218 --><p class='noindent'>Given an autonomous system
+</p>
+<div class='math-display'>
+<img alt='x˙= f(x,t)
+' class='math-display' src='main140x.png' /></div>
+<!-- l. 218 --><p class='noindent'>and some open connected region <span class='zplmr7y-'>𝒟 </span>containing <span class='accentvec'><span class='pplr9t-'>0</span></span><br class='newline' />
+</p><!-- l. 218 --><p class='noindent'>Stability is usually used to describe trajectories around the origin of a system.<br class='newline' />
+</p>
+       <ul class='itemize1'>
+       <li class='itemize'>
+       <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>Stability</span><br class='newline' />The equilibrium point <span class='zplmr7m-'>x </span><span class='zplmr7t-'>=  </span><span class='pplr9t-'>0  </span>is stable if <span class='zplmr7y-'>∀</span><span class='zplmr7m-'>𝜖 &gt; </span><span class='pplr9t-'>0</span>, <span class='zplmr7y-'>∃</span><span class='zplmr7m-'>δ</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>𝜖</span><span class='zplmr7t-'>)  </span><span class='zplmr7m-'>&gt; </span><span class='pplr9t-'>0  </span>such that <img align='middle' alt='                     ∥∥x (0)∥∥' class='left' src='main141x.png' /> <span class='zplmr7m-'>&lt;
+     </span><span class='zplmr7m-'>δ</span> <img alt='= ⇒' class='Longrightarrow' src='main142x.png' /><img align='middle' alt='∥∥x(t)∥∥' class='left' src='main143x.png' /> <span class='zplmr7m-'>&lt; 𝜖</span>
+</p>
+         <ul class='itemize2'>
+         <li class='itemize'>
+         <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>In the sense of Lyapunov</span><br class='newline' />If there exists a scalar, continuously-differentiable function <span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>such that
+              </p>
+<div class='math-display'>
+<img alt='V(x) &gt; 0  ∀x ∈ 𝒟 ∖ {⃗0} ,  V (⃗0) = 0
+' class='math-display' src='main144x.png' /></div>
+                <div class='center'>
+<!-- l. 218 --><p class='noindent'>
+</p><!-- l. 218 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is a locally positive definite function)</span></p></div>
+              <div class='center'>
+<!-- l. 218 --><p class='noindent'>
+</p><!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>AND</span></p></div>
+             <!-- l. 218 --><p class='noindent'>
+             </p>
+<div class='math-display'>
+<img alt='                       {  }
+V˙(x) = ∂V-≤ 0  ∀x ∈ 𝒟 ∖  ⃗0 ,    V(⃗0) = 0
+       ∂x
+' class='math-display' src='main145x.png' /></div>
+                <div class='center'>
+<!-- l. 218 --><p class='noindent'>
+</p><!-- l. 218 --><p class='noindent'><span class='cmssi-10'>(</span><span class='accentdot'><span class='zplmr7m-'>V</span></span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is a locally negative semidefinite function)</span></p></div>
+              <!-- l. 218 --><p class='noindent'>then the origin is stable in the sense of Lyapunov, and <span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>is a Lyapunov function of
+              <span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>)</span>.</p></li></ul>
        </li>
-       <li class='itemize'>Asymptotic stability (TODO)
+       <li class='itemize'><span class='cmssbx-10'>Instability</span><br class='newline' />The equilibrium point <span class='zplmr7m-'>x </span><span class='zplmr7t-'>= </span><span class='pplr9t-'>0 </span>is unstable if it is not stable
        </li>
-       <li class='itemize'>Exponential stability (TODO)
+       <li class='itemize'>
+       <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>Asymptotic stability</span><br class='newline' />The equilibrium point <span class='zplmr7m-'>x </span><span class='zplmr7t-'>= </span><span class='pplr9t-'>0 </span>is asymptotically stable if it is stable and <span class='zplmr7y-'>∃</span><span class='zplmr7m-'>δ</span><sub><span class='pplr9t-x-x-76'>1</span></sub>  such that
+       <img align='middle' alt='∥    ∥
+∥x (0)∥' class='left' src='main146x.png' /> <span class='zplmr7m-'>&lt; δ</span><sub><span class='pplr9t-x-x-76'>1</span></sub> <img alt='=⇒' class='Longrightarrow' src='main147x.png' /> <span class='pplr9t-'>lim</span> <sub><span class='zplmr7m-x-x-76'>t</span><span class='zplmr7y-x-x-76'>→∞</span></sub><span class='zplmr7m-'>x</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>t</span><span class='zplmr7t-'>) = </span><span class='pplr9t-'>0</span>
+</p>
+                <ul class='itemize2'>
+                <li class='itemize'>
+                <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>In the sense of Lyapunov</span><br class='newline' />The origin is asymptotically stable in the sense of Lyapunov if stable AND
+              </p>
+<div class='math-display'>
+<img alt='                        { }
+V˙(x) = ∂V &lt; 0  ∀x ∈ 𝒟 ∖ ⃗0
+        ∂x
+' class='math-display' src='main148x.png' /></div>
+      <div class='center'>
+<!-- l. 218 --><p class='noindent'>
+</p><!-- l. 218 --><p class='noindent'><span class='cmssi-10'>(</span><span class='accentdot'><span class='zplmr7m-'>V</span></span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is a locally negative definite function)</span></p></div>
+              </li></ul>
        </li>
-       <li class='itemize'>Uniform stability (TODO)
+       <li class='itemize'>
+       <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>Exponential stability</span><br class='newline' /></p>
+             <ul class='itemize2'>
+             <li class='itemize'>
+             <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>In the sense of Lyapunov</span><br class='newline' />The origin is exponentially stable in the sense of Lyapunov if stable AND
+              </p>
+<div class='math-display'>
+<img alt='
+' class='math-display' src='main149x.png' /></div>
+      </li></ul>
+   </li>
+   <li class='itemize'><span class='cmssbx-10'>Uniform stability</span><br class='newline' />The equilibrium point <span class='zplmr7m-'>x </span><span class='zplmr7t-'>= </span><span class='pplr9t-'>0 </span>is uniformly stable if it is stable and, for each <span class='zplmr7m-'>epsilon &gt; </span><span class='pplr9t-'>0</span>, there
+       exists a <span class='zplmr7m-'>δ</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>𝜖</span><span class='zplmr7t-'>) </span><span class='zplmr7m-'>&gt; </span><span class='pplr9t-'>0</span>, independent of <span class='zplmr7m-'>t</span><sub><span class='pplr9t-x-x-76'>0</span></sub>.
        </li>
-       <li class='itemize'>Global stability (TODO)
+       <li class='itemize'>
+       <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>Global asymptotic stability</span><br class='newline' /></p>
+             <ul class='itemize2'>
+             <li class='itemize'>
+             <!-- l. 218 --><p class='noindent'><span class='cmssbx-10'>In the sense of Lyapunov</span><br class='newline' />If  the  origin  is  globally  asymptotically  stable  in  the  sense  of  Lyapunov  if  is
+              asymptotically stable and
+              </p>
+<div class='math-display'>
+<img alt='
+' class='math-display' src='main150x.png' /></div>
+                <div class='center'>
+<!-- l. 218 --><p class='noindent'>
+</p><!-- l. 218 --><p class='noindent'><span class='cmssi-10'>(</span><span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span><span class='cmssi-10'>is radially unbounded)</span></p></div>
+              </li></ul>
        </li>
-       <li class='itemize'>L-stability (TODO)
+       <li class='itemize'><span class='cmssbx-10'>Global exponential stability</span><br class='newline' />(TODO)
        </li>
-       <li class='itemize'>I/O L-stability (TODO)
+       <li class='itemize'><span class='cmssbx-10'>L-stability</span><br class='newline' />(TODO)
        </li>
-       <li class='itemize'>Small-signal I/O L-stability (TODO)
+       <li class='itemize'><span class='cmssbx-10'>I/O L-stability</span><br class='newline' />(TODO)
        </li>
-       <li class='itemize'>Small-signal finite-gain L-stability (TODO)
+       <li class='itemize'><span class='cmssbx-10'>Finite-gain L-stability</span><br class='newline' />(TODO)
+       </li>
+       <li class='itemize'><span class='cmssbx-10'>Small-signal I/O L-stability</span><br class='newline' />(TODO)
+       </li>
+       <li class='itemize'><span class='cmssbx-10'>Small-signal finite-gain L-stability</span><br class='newline' />(TODO)
 </li></ul> </div>                                                                                                                 </td>
-</tr><tr id='TBL-13-35-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-35-1' style='white-space:normal; text-align:left;'>
- <!-- l. 129 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-36-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-36-1' style='white-space:normal; text-align:left;'>
- <!-- l. 129 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-37-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-37-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-38-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-38-1' style='white-space:normal; text-align:left;'>
- <!-- l. 142 --><p class='noindent'>Class K function                                                       </p></td><td class='td11' id='TBL-13-38-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'>     <ul class='itemize1'>
-     <li class='itemize'>(TODO)</li></ul> </div>                                                                                                      </td>
-</tr><tr id='TBL-13-40-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-40-1' style='white-space:normal; text-align:left;'>
- <!-- l. 142 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-41-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-41-1' style='white-space:normal; text-align:left;'>
- <!-- l. 142 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-42-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-42-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-43-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-43-1' style='white-space:normal; text-align:left;'>
- <!-- l. 155 --><p class='noindent'>Radially     Unbounded
-  function                                                                  </p></td><td class='td11' id='TBL-13-43-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'>     <ul class='itemize1'>
-     <li class='itemize'>(TODO)</li></ul> </div>                                                                                                      </td>
-</tr><tr id='TBL-13-45-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-45-1' style='white-space:normal; text-align:left;'>
- <!-- l. 155 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-46-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-46-1' style='white-space:normal; text-align:left;'>
- <!-- l. 155 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-47-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-47-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-48-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-48-1' style='white-space:normal; text-align:left;'>
- <!-- l. 167 --><p class='noindent'><span class='pplr9t-'>sup</span> (supremum)                                                       </p></td><td class='td11' id='TBL-13-48-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'><!-- l. 167 --><p class='noindent'>Like a maximum of a functions, but includes limits that aren’t necessarily a part of the domain
+                                                                                                       
+                                                                                                       
+</tr><tr id='TBL-13-37-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-37-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 218 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-38-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-38-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 218 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-39-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-39-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-40-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-40-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 246 --><p class='noindent'>Class <span class='zplmr7m-'>κ </span>function                                                        </p></td><td class='td11' id='TBL-13-40-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 246 --><p class='noindent'>A continuous scalar function on <span class='zplmb7t-'>R</span><sup><span class='zplmr7t-x-x-76'>+</span></sup> is
+</p>
+       <ul class='itemize1'>
+       <li class='itemize'>
+       <!-- l. 246 --><p class='noindent'><span class='cmssbx-10'>class </span><span class='zplmr7m-'>κ </span>if it is: </p>
+              <ul class='itemize2'>
+              <li class='itemize'>zero at zero
+              </li>
+              <li class='itemize'>strictly increasing
+              </li>
+              <li class='itemize'>continuous</li></ul>
+       </li>
+       <li class='itemize'>
+       <!-- l. 246 --><p class='noindent'><span class='cmssbx-10'>class </span><span class='zplmr7m-'>κ</span><sub><span class='zplmr7y-x-x-76'>∞</span></sub> if it is: </p>
+              <ul class='itemize2'>
+              <li class='itemize'>zero at zero
+              </li>
+              <li class='itemize'>strictly increasing
+              </li>
+              <li class='itemize'>continuous
+              </li>
+              <li class='itemize'><span class='pplr9t-'>inf</span> at <span class='pplr9t-'>inf</span></li></ul>
+         </li></ul> </div>                                                                                                                                 </td>
+</tr><tr id='TBL-13-42-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-42-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 246 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-43-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-43-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 246 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-44-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-44-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-45-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-45-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 258 --><p class='noindent'>Radially     Unbounded
+  function                                                                  </p></td><td class='td11' id='TBL-13-45-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 258 --><p class='noindent'>A function <span class='zplmr7m-'>V</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>is radially unbounded if
+</p>
+<div class='math-display'>
+<img alt='∥x∥ → inf =⇒  V(x) → inf
+' class='math-display' src='main151x.png' /></div></div>                                                                                                                                          </td>
+</tr><tr id='TBL-13-47-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-47-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 258 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-48-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-48-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 258 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-49-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-49-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-50-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-50-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 270 --><p class='noindent'><span class='pplr9t-'>sup</span> (supremum)                                                       </p></td><td class='td11' id='TBL-13-50-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 270 --><p class='noindent'>Like a maximum of a functions, but includes limits that aren’t necessarily a part of the domain
 of the function. (TODO) </p> </div>                                                                                         </td>
-</tr><tr id='TBL-13-50-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-50-1' style='white-space:normal; text-align:left;'>
- <!-- l. 167 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-51-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-51-1' style='white-space:normal; text-align:left;'>
- <!-- l. 167 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-52-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-52-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-53-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-53-1' style='white-space:normal; text-align:left;'>
- <!-- l. 190 --><p class='noindent'>Hurwitz                                                                  </p></td><td class='td11' id='TBL-13-53-2' style='white-space:normal; text-align:left;'>
+</tr><tr id='TBL-13-52-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-52-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 270 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-53-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-53-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 270 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-54-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-54-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-55-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-55-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 293 --><p class='noindent'>Hurwitz                                                                  </p></td><td class='td11' id='TBL-13-55-2' style='white-space:normal; text-align:left;'>
  <div class='minipage'>     <ul class='itemize1'>
      <li class='itemize'><span class='cmssbx-10'>Hurwitz (polynomial)</span>: <br class='newline' />A polynomial whose roots that are all in the left-half plane. (In other words, the real part
        of every root is strictly negative)
@@ -463,77 +609,80 @@ of the function. (TODO) </p> </div>                                             
        in the left-half plane. (In other words, the real part of every eigenvalue is strictly negative)
        </li>
        <li class='itemize'><span class='cmssbx-10'>Routh-Hurwitz stability criterion </span>(<a href='https://ieeexplore.ieee.org/document/165530'>IEEE</a>): <br class='newline' />TODO</li></ul>
-<!-- l. 190 --><p class='noindent'>Any hyperbolic fixed point (or equilibrium point) of a continuous dynamical system is locally
+<!-- l. 293 --><p class='noindent'>Any hyperbolic fixed point (or equilibrium point) of a continuous dynamical system is locally
 asymptotically stable if and only if the Jacobian of the dynamical system is Hurwitz stable at the fixed
 point.
-</p><!-- l. 190 --><p class='noindent'>A system is stable if its control matrix is a Hurwitz matrix.
-</p><!-- l. 190 --><p class='noindent'>The negative real components of the eigenvalues of the matrix represent negative feedback. Similarly,
+</p><!-- l. 293 --><p class='noindent'>A system is stable if its control matrix is a Hurwitz matrix.
+</p><!-- l. 293 --><p class='noindent'>The negative real components of the eigenvalues of the matrix represent negative feedback. Similarly,
 a system is inherently unstable if any of the eigenvalues have positive real components, representing
 positive feedback. </p> </div>                                                                                                  </td>
-</tr><tr id='TBL-13-55-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-55-1' style='white-space:normal; text-align:left;'>
- <!-- l. 190 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-56-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-56-1' style='white-space:normal; text-align:left;'>
- <!-- l. 190 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-57-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-57-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-58-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-58-1' style='white-space:normal; text-align:left;'>
- <!-- l. 215 --><p class='noindent'>Zero-state observable                                                 </p></td><td class='td11' id='TBL-13-58-2' style='white-space:normal; text-align:left;'>
- <div class='minipage'><!-- l. 215 --><p class='noindent'>A time-invariant system of the form
+</tr><tr id='TBL-13-57-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-57-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 293 --><p class='noindent'>                                                </p></td>
+                                                                                                       
+                                                                                                       
+</tr><tr id='TBL-13-58-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-58-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 293 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-59-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-59-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-60-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-60-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 318 --><p class='noindent'>Zero-state observable                                                 </p></td><td class='td11' id='TBL-13-60-2' style='white-space:normal; text-align:left;'>
+ <div class='minipage'><!-- l. 318 --><p class='noindent'>A time-invariant system of the form
 </p>
 <div class='math-display'>
-<img alt='{ ##########
-  ˙x =#f(x#,u)#
-  y = h(x,u)
-' class='math-display' src='main84x.png' /></div>
-<!-- l. 215 --><p class='noindent'>is zero-state observable if
-</p><!-- l. 215 --><p class='noindent'>
+<img alt='( ##########
+{ ˙x#=#f(x,u#)
+( y = h(x,u)
+' class='math-display' src='main152x.png' /></div>
+<!-- l. 318 --><p class='noindent'>is zero-state observable if
+</p><!-- l. 318 --><p class='noindent'>
 </p>
 <div class='math-display'>
-<img alt='{
- y ≡ 0
- u ≡ 0   =⇒  x ≡ 0
-' class='math-display' src='main85x.png' /></div>
-<!-- l. 215 --><p class='noindent'>In other words, when <span class='zplmr7m-'>u </span><span class='zplmr7t-'>= </span><span class='pplr9t-'>0</span>, any nonzero state behavior will be observed at the output (<span class='zplmr7m-'>y≠</span><span class='pplr9t-'>0</span>) </p> </div>   </td>
-</tr><tr id='TBL-13-60-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-60-1' style='white-space:normal; text-align:left;'>
- <!-- l. 215 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-61-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-61-1' style='white-space:normal; text-align:left;'>
- <!-- l. 215 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-62-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-62-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-63-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-63-1' style='white-space:normal; text-align:left;'>
- <!-- l. 247 --><p class='noindent'>Invariant Sets                                                           </p></td><td class='td11' id='TBL-13-63-2' style='white-space:normal; text-align:left;'>
+<img alt='(
+{y ≡ 0
+         =⇒  x ≡ 0
+(u ≡ 0
+' class='math-display' src='main153x.png' /></div>
+<!-- l. 318 --><p class='noindent'>In other words, when <span class='zplmr7m-'>u </span><span class='zplmr7t-'>= </span><span class='pplr9t-'>0</span>, any nonzero state behavior will be observed at the output (<span class='zplmr7m-'>y≠</span><span class='pplr9t-'>0</span>) </p> </div>   </td>
+</tr><tr id='TBL-13-62-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-62-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 318 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-63-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-63-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 318 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-64-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-64-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-65-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-65-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 350 --><p class='noindent'>Invariant Sets                                                           </p></td><td class='td11' id='TBL-13-65-2' style='white-space:normal; text-align:left;'>
  <div class='minipage'>     <ul class='itemize1'>
      <li class='itemize'>
-     <!-- l. 247 --><p class='noindent'><span class='cmssbx-10'>Invariant Set </span><br class='newline' />A set of vectors <span class='zplmr7m-'>M </span>is invariant with respect to <span class='zplmr7m-'>ẋ </span><span class='zplmr7t-'>= </span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>if
+     <!-- l. 350 --><p class='noindent'><span class='cmssbx-10'>Invariant Set </span><br class='newline' />A set of vectors <span class='zplmr7m-'>M </span>is invariant with respect to <span class='zplmr7m-'>ẋ </span><span class='zplmr7t-'>= </span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>if
        </p>
 <div class='math-display'>
 <img alt='x(0) ∈ M =⇒  x (t) ∈ M ,   ∀t ∈ R
-' class='math-display' src='main86x.png' /></div>
+' class='math-display' src='main154x.png' /></div>
           <div class='center'>
-<!-- l. 247 --><p class='noindent'>
-</p><!-- l. 247 --><p class='noindent'><span class='cmssi-10'>(if a solution belongs to M at some time instant, then it belongs to M for all future and past
+<!-- l. 350 --><p class='noindent'>
+</p><!-- l. 350 --><p class='noindent'><span class='cmssi-10'>(if a solution belongs to M at some time instant, then it belongs to M for all future and past
 </span><span class='cmssi-10'>time)</span></p></div>
        </li>
        <li class='itemize'>
-       <!-- l. 247 --><p class='noindent'><span class='cmssbx-10'>Positively Invariant Set </span><br class='newline' />A set of vectors <span class='zplmr7m-'>M </span>is positively invariant with respect to <span class='zplmr7m-'>ẋ </span><span class='zplmr7t-'>= </span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>if
+       <!-- l. 350 --><p class='noindent'><span class='cmssbx-10'>Positively Invariant Set </span><br class='newline' />A set of vectors <span class='zplmr7m-'>M </span>is positively invariant with respect to <span class='zplmr7m-'>ẋ </span><span class='zplmr7t-'>= </span><span class='zplmr7m-'>f</span><span class='zplmr7t-'>(</span><span class='zplmr7m-'>x</span><span class='zplmr7t-'>) </span>if
        </p>
 <div class='math-display'>
 <img alt='x(0) ∈ M = ⇒  x(t) ∈ M ,   ∀t ≥ 0
-' class='math-display' src='main87x.png' /></div>
+' class='math-display' src='main155x.png' /></div>
          <div class='center'>
-<!-- l. 247 --><p class='noindent'>
-</p><!-- l. 247 --><p class='noindent'><span class='cmssi-10'>(if a solution belongs to M at some time instant, then it belongs to M for all future time)</span></p></div>
+<!-- l. 350 --><p class='noindent'>
+</p><!-- l. 350 --><p class='noindent'><span class='cmssi-10'>(if a solution belongs to M at some time instant, then it belongs to M for all future time)</span></p></div>
        </li></ul> </div>                                                                                                                 </td>
-</tr><tr id='TBL-13-65-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-65-1' style='white-space:normal; text-align:left;'>
- <!-- l. 247 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-66-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-66-1' style='white-space:normal; text-align:left;'>
- <!-- l. 247 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-67-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-67-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-68-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-68-1' style='white-space:normal; text-align:left;'>
- <!-- l. 92 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-70-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-70-1' style='white-space:normal; text-align:left;'>
- <!-- l. 92 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-71-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-71-1' style='white-space:normal; text-align:left;'>
- <!-- l. 92 --><p class='noindent'>                                                </p></td>
-</tr><tr id='TBL-13-72-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-72-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-13-72-2' style='white-space:normal; text-align:left;'></td></tr>
+</tr><tr id='TBL-13-67-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-67-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 350 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-68-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-68-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 350 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-69-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-69-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-70-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-70-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 93 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-72-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-72-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 93 --><p class='noindent'>                                                </p></td>
+                                                                                                       
+                                                                                                       
+</tr><tr id='TBL-13-73-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-73-1' style='white-space:normal; text-align:left;'>
+ <!-- l. 93 --><p class='noindent'>                                                </p></td>
+</tr><tr id='TBL-13-74-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-74-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-13-74-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
-                                                                                                       
-                                                                                                       
 </div>
     
 </body> 
