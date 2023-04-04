@@ -47,7 +47,20 @@
     (\href{https://mathworld.wolfram.com/Hessian.html}{Wolfram})
 }{
 \begin{itemize}
-    \item A $2n$ x $2n$ matrix of all 2nd order partial derivatives of some function $f : \mathbb{R}^n \rightarrow \mathbb{R}$
+    \item A $n$ x $n$ matrix of all 2nd order partial derivatives of some function $f : \mathbb{R}^n \rightarrow \mathbb{R}$
+    
+    \begin{equation}
+        H f(\Vec{x}) = f"(\Vec{x}) = 
+        \left(
+        \begin{matrix} 
+                \frac{\partial^2 f}{\partial x_1 \partial x_1} & \frac{\partial^2 f}{\partial x_1 \partial x_2} & \frac{\partial^2 f}{\partial x_1 \partial x_3} &  \dots  & \frac{\partial^2 f}{\partial x_1 \partial x_n} \\
+                \frac{\partial^2 f}{\partial x_2 \partial x_1} & \frac{\partial^2 f}{\partial x_2 \partial x_2} & \frac{\partial^2 f}{\partial x_2 \partial x_3} &  \dots  & \frac{\partial^2 f}{\partial x_2 \partial x_n} \\
+                \frac{\partial^2 f}{\partial x_3 \partial x_1} & \frac{\partial^2 f}{\partial x_3 \partial x_2} & \frac{\partial^2 f}{\partial x_3 \partial x_3} &  \dots  & \frac{\partial^2 f}{\partial x_3 \partial x_n} \\
+                \vdots & \vdots & \vdots & \ddots & \vdots \\
+                \frac{\partial^2 f}{\partial x_n \partial x_1} & \frac{\partial^2 f}{\partial x_n \partial x_2} & \frac{\partial^2 f}{\partial x_n \partial x_3} &  \dots  & \frac{\partial^2 f}{\partial x_n \partial x_n} \\
+        \end{matrix} 
+        \right)
+    \end{equation}
     \item The determinant of a Hessian matrix
 \end{itemize} 
 }
@@ -190,6 +203,14 @@ Stability is usually used to describe trajectories around the origin of a system
     
     \item \textbf{Uniform stability}\\
     The equilibrium point $x=0$ is uniformly stable if it is stable and, for each $epsilon>0$, there exists a $\delta(\epsilon)>0$, independent of $t_0$.
+\end{itemize}
+}
+    
+\entry{  
+    Stability 
+    (continued)
+}{
+\begin{itemize}
     
     \item \textbf{Global asymptotic stability}\\
     \begin{itemize}
@@ -200,8 +221,6 @@ Stability is usually used to describe trajectories around the origin of a system
             \textit{($V(x)$ is radially unbounded)}
         \end{center}
     \end{itemize}
-    
-    \item \textbf{Global exponential stability}\\ (TODO)
     
     \item \textbf{L-stability}\\ (TODO)
     
@@ -254,7 +273,7 @@ A continuous scalar function on $\mathbf{R}^+$ is
     Radially Unbounded function
 }{
 A function $V(x)$ is radially unbounded if 
-\[\norm{x}\rightarrow\infty \implies V(x)\rightarrow\infty\]
+\[\norm{x}\rightarrow\infty \implies \norm{V(x)}\rightarrow\infty\]
 }
 
 
