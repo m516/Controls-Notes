@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.4.3)  3 APR 2023 22:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.4.4)  4 APR 2023 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,41 +1016,42 @@ l. 59 Writing main.idv[46] (main45x.png)
 l. 59 Writing main.idv[47] (main46x.png)
 l. 59 Writing main.idv[48] (main47x.png)
 ) [8] [9] (./terms.tex) (./terms.tex) (./terms.tex) (./terms.tex
-l. 27 Writing main.idv[130] (main129x.png)
-l. 27 Writing main.idv[131] (main130x.png)
-l. 27 Writing main.idv[132] (main131x.png)
 l. 27 Writing main.idv[133] (main132x.png)
 l. 27 Writing main.idv[134] (main133x.png)
-l. 132 Writing main.idv[135] (main134x.png)
-l. 132 Writing main.idv[136] (main135x.png)
-l. 132 Writing main.idv[137] (main136x.png)
-l. 132 Writing main.idv[138] (main137x.png)
-l. 132 Writing main.idv[139] (main138x.png)
-l. 132 Writing main.idv[140] (main139x.png)
-l. 218 Writing main.idv[141] (main140x.png)
-l. 218 Writing main.idv[142] (main141x.png)
-l. 218 Writing main.idv[143] (main142x.png)
-l. 218 Writing main.idv[144] (main143x.png)
-l. 218 Writing main.idv[145] (main144x.png)
-l. 218 Writing main.idv[146] (main145x.png)
-l. 218 Writing main.idv[147] (main146x.png)
-l. 218 Writing main.idv[148] (main147x.png)
-l. 218 Writing main.idv[149] (main148x.png)
-l. 218 Writing main.idv[150] (main149x.png)
-l. 218 Writing main.idv[151] (main150x.png)
-l. 258 Writing main.idv[152] (main151x.png)
-l. 318 Writing main.idv[153] (main152x.png)
-l. 318 Writing main.idv[154] (main153x.png)
-l. 350 Writing main.idv[155] (main154x.png)
-l. 350 Writing main.idv[156] (main155x.png)
-) [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] (./main.aux) ) 
+l. 27 Writing main.idv[135] (main134x.png)
+l. 27 Writing main.idv[136] (main135x.png)
+l. 27 Writing main.idv[137] (main136x.png)
+l. 66 Writing main.idv[138] (main137x.png)
+l. 145 Writing main.idv[139] (main138x.png)
+l. 145 Writing main.idv[140] (main139x.png)
+l. 145 Writing main.idv[141] (main140x.png)
+l. 145 Writing main.idv[142] (main141x.png)
+l. 145 Writing main.idv[143] (main142x.png)
+l. 145 Writing main.idv[144] (main143x.png)
+l. 207 Writing main.idv[145] (main144x.png)
+l. 207 Writing main.idv[146] (main145x.png)
+l. 207 Writing main.idv[147] (main146x.png)
+l. 207 Writing main.idv[148] (main147x.png)
+l. 207 Writing main.idv[149] (main148x.png)
+l. 207 Writing main.idv[150] (main149x.png)
+l. 207 Writing main.idv[151] (main150x.png)
+l. 207 Writing main.idv[152] (main151x.png)
+l. 207 Writing main.idv[153] (main152x.png)
+l. 207 Writing main.idv[154] (main153x.png)
+l. 237 Writing main.idv[155] (main154x.png)
+l. 277 Writing main.idv[156] (main155x.png)
+l. 337 Writing main.idv[157] (main156x.png)
+l. 337 Writing main.idv[158] (main157x.png)
+l. 369 Writing main.idv[159] (main158x.png)
+l. 369 Writing main.idv[160] (main159x.png)
+) [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16539 strings out of 478288
- 247406 string characters out of 5849316
- 761329 words of memory out of 5000000
- 34216 multiletter control sequences out of 15000+600000
+ 16542 strings out of 478288
+ 247431 string characters out of 5849316
+ 774337 words of memory out of 5000000
+ 34219 multiletter control sequences out of 15000+600000
  495558 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,22n,88p,823b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (20 pages, 124088 bytes).
+Output written on main.dvi (21 pages, 128404 bytes).
