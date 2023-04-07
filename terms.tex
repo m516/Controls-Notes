@@ -342,7 +342,7 @@ The negative real components of the eigenvalues of the matrix represent negative
 
 
 \entry{  
-    Invariant Sets
+    Sets
 }{
 \begin{itemize}
     \item \textbf{Invariant Set} \\
@@ -361,9 +361,35 @@ all future and past time)}
     x(0) \in M \implies x(t) \in M, \qquad \forall t \geq 0
     \]
     \begin{center}
-        \emph{(if a solution belongs to M at some time instant, then it belongs to M for
+        \textit{}{(if a solution belongs to M at some time instant, then it belongs to M for
 all future time)}
     \end{center}
+
+    \item \textbf{Open Set}\\
+    A set $D\subset\mathbb{R}^n$ (\textit{$D$, which is a set of real vectors}) is an \textbf{open set} if 
+    \[\forall x \subset D, \quad \exists \epsilon>0 \quad \text{ such that } \quad B\left(x, \epsilon\right) \subset D\]
+    
+    \begin{center}
+        \textit{(for all vectors $x$ in the domain $D$, there exists a real scalar $\epsilon$ such that we can create a ball around $x$ with radius $\epsilon$, and that whole ball is in $D$)}
+    \end{center}
+
+    \item \textbf{Closed Set}\\
+     A set $D\subset\mathbb{R}^n$ (\textit{$D$, which is a set of real vectors}) is a \textbf{closed set} if 
+    \[\mathbb{R}^n \setminus D \quad \text{is an open set}\]
+    \begin{center}
+        \textit{(everywhere outside of $D$ is open)}
+    \end{center}
+
+    \item \textbf{Bounded Set}\\
+    A set $D\subset\mathbb{R}^n$ (\textit{$D$, which is a set of real vectors}) is a \textbf{bounded set} if 
+    \[\exists \epsilon>0 \quad \text{ such that } \quad D \subset B\left(0, \epsilon\right)\]
+    
+    \begin{center}
+        \textit{($D$ fits in a ball with a finite, constant radius $\epsilon$)}
+    \end{center}
+
+    \item \textbf{Compact Set}\\
+    A set $D\subset\mathbb{R}^n$ (\textit{$D$, which is a set of real vectors}) is a \textbf{compact set} if it is closed and bounded.
     
 \end{itemize}
 }
