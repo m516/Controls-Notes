@@ -15,3 +15,6 @@ There are a few ways to make these contributions:
 1. Submit an issue that describes your proposed changes.
 2. Fork this repo, modify the code as desired, and submit a pull request.
 3. Email me to gain access to the GitHub repo and/or its corresponding Overleaf project.
+
+### Contributors:
+* [m516](https://github.com/m516)
