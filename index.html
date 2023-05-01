@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang='en-US' xml:lang='en-US'> 
-<head><title>Controls Notes</title> 
+<head><title>Control Theory Quick Reference</title> 
 <meta charset='utf-8' /> 
 <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
 <meta content='width=device-width,initial-scale=1' name='viewport' /> 
@@ -13,17 +13,29 @@
                                                                                                        
                                                                                                        
 
-<h2 class='titleHead'>Controls Notes</h2>
- <div class='author'><span class='cmss-12'>M516</span></div><br />
+<h2 class='titleHead'>Control Theory Quick Reference</h2>
+ <div class='author'></div><br />
 <div class='date'><span class='cmss-12'>May 1, 2023</span></div>
    </div>
-<!-- l. 59 --><p class='indent'>   This document is an ongoing collection of symbols, theorems, tools, and terms I have found useful for studying control theory, available
-as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/main.pdf'>PDF</a>, <a href='https://m516.github.io/Controls-Notes/'>HTML</a>, and <a href='https://github.com/m516/Controls-Notes'>LaTeXsource code</a>.
-</p>
+<!-- l. 58 --><p class='indent'>   The study of many kinds of systems, control policies, matrices, and vector spaces (including functions) comprises control theory. This
+document is a free, community-driven growing dictionary of these terms, designed for quickly finding more information about them, rather
+than hunting down definitions online or in a textbook.<br class='newline' />
+</p><!-- l. 60 --><p class='indent'>   It is available in a few formats: <a href='https://github.com/m516/Controls-Notes/releases/download/Current/main.pdf'>PDF</a>, <a href='https://m516.github.io/Controls-Notes/'>HTML</a>, and <a href='https://github.com/m516/Controls-Notes'>LaTeXsource code</a>.<br class='newline' />
+</p><!-- l. 62 --><p class='indent'>   Contributions are not just welcome, they are necessary to keep this project going strong. If you find potential for this project to help
+someone else, please consider generously donating 15 minutes of your time to describe one term that might confuses someone else, refine an
+inaccurate/incorrect definition, or fix that one design issue that bothers you. Little contributions like these will add up to make a lasting
+impact on control theory studies.
+</p><!-- l. 64 --><p class='indent'>   Here are a few ways to donate to this project: </p>
+     <ul class='itemize1'>
+     <li class='itemize'>Submit an <a href='https://github.com/m516/Controls-Notes/issues'>issue</a> that describes your proposed changes.
+     </li>
+     <li class='itemize'><a href='https://github.com/m516/Controls-Notes/fork'>Fork this repo</a>, modify the code as desired, and submit a pull request.
+     </li>
+     <li class='itemize'>Email me to gain access to the GitHub repo and/or its corresponding Overleaf project.</li></ul>
 <div class='center'>
-<!-- l. 65 --><p class='noindent'>
+<!-- l. 72 --><p class='noindent'>
 </p>
-<a id='x1-2r1'></a><!-- l. 71 --><div class='longtable'> <table class='longtable' id='TBL-5'><colgroup id='TBL-5-1g'><col id='TBL-5-1' /><col id='TBL-5-2' /></colgroup>
+<a id='x1-2r1'></a><!-- l. 78 --><div class='longtable'> <table class='longtable' id='TBL-5'><colgroup id='TBL-5-1g'><col id='TBL-5-1' /><col id='TBL-5-2' /></colgroup>
 <tr id='TBL-5-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 1 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-4-1' style='white-space:normal; text-align:left;'>
@@ -42,8 +54,6 @@ as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/mai
      <li class='itemize'>state vector (state space) (<a href='https://en.wikipedia.org/wiki/State_space'>W</a>) <br class='newline' />Type: <span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup></li></ul> </div>                                                                                                          </td>
 </tr><tr id='TBL-5-17-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-17-1' style='white-space:normal; text-align:left;'>
  <!-- l. 12 --><p class='noindent'>                                                </p></td>
-                                                                                                       
-                                                                                                       
 </tr><tr id='TBL-5-18-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-18-1' style='white-space:normal; text-align:left;'>
  <!-- l. 12 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-19-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-5-19-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-5-20-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-20-1' style='white-space:normal; text-align:left;'>
@@ -58,7 +68,8 @@ as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/mai
                    <!-- l. 31 --><p class='noindent'>Assuming discrete time linear system:
               </p>
 <div class='math-display'>
-<img alt='Hk = L (xk,uk,k)+ pTk+ 1f(xk,uk,k)
+<img alt='                  T
+Hk = L (xk,uk,k)+ pk+ 1f(xk,uk,k)
 ' class='math-display' src='main30x.png' /></div>
               </li></ul>
         </li></ul> </div>                                                                                                                                       </td>
@@ -70,6 +81,8 @@ as <a href='https://github.com/m516/Controls-Notes/releases/download/Current/mai
  <!-- l. 42 --><p class='noindent'><span class='zplmr7y-'>ℒ</span>                              </p></td><td class='td11' id='TBL-5-25-2' style='white-space:normal; text-align:left;'>
  <div class='minipage'>     <ul class='itemize1'>
      <li class='itemize'>the Lagrangian <br class='newline' />type: <span class='fplmbb-'>R</span><sup><span class='zplmr7m-x-x-76'>n</span></sup> <span class='zplmr7y-'>→</span><span class='fplmbb-'>R</span></li></ul> </div>                                                                                                                                                           </td>
+                                                                                                       
+                                                                                                       
 </tr><tr id='TBL-5-27-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-27-1' style='white-space:normal; text-align:left;'>
  <!-- l. 42 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-28-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-28-1' style='white-space:normal; text-align:left;'>
@@ -201,18 +214,18 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 </tr><tr id='TBL-5-68-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-68-1' style='white-space:normal; text-align:left;'>
  <!-- l. 156 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-69-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-5-69-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-5-70-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-70-1' style='white-space:normal; text-align:left;'>
- <!-- l. 71 --><p class='noindent'>                                                </p></td>
+ <!-- l. 78 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-72-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-72-1' style='white-space:normal; text-align:left;'>
- <!-- l. 71 --><p class='noindent'>                                                </p></td>
+ <!-- l. 78 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-73-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-73-1' style='white-space:normal; text-align:left;'>
- <!-- l. 71 --><p class='noindent'>                                                </p></td>
+ <!-- l. 78 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-5-74-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-74-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-5-74-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
 <div class='center'>
-<!-- l. 76 --><p class='noindent'>
+<!-- l. 83 --><p class='noindent'>
 </p>
-<a id='x1-6r2'></a><!-- l. 82 --><div class='longtable'> <table class='longtable' id='TBL-9'><colgroup id='TBL-9-1g'><col id='TBL-9-1' /><col id='TBL-9-2' /></colgroup>
+<a id='x1-6r2'></a><!-- l. 89 --><div class='longtable'> <table class='longtable' id='TBL-9'><colgroup id='TBL-9-1g'><col id='TBL-9-1' /><col id='TBL-9-2' /></colgroup>
 <tr id='TBL-9-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 1 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-4-1' style='white-space:normal; text-align:left;'>
@@ -288,18 +301,18 @@ e1 = ||0|| ,    e2 = || 0|| ,  e3 = ||1|| ,    ...
 </tr><tr id='TBL-9-23-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-23-1' style='white-space:normal; text-align:left;'>
  <!-- l. 59 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-24-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-9-24-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-9-25-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-25-1' style='white-space:normal; text-align:left;'>
- <!-- l. 82 --><p class='noindent'>                                                </p></td>
+ <!-- l. 89 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-27-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-27-1' style='white-space:normal; text-align:left;'>
- <!-- l. 82 --><p class='noindent'>                                                </p></td>
+ <!-- l. 89 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-28-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-28-1' style='white-space:normal; text-align:left;'>
- <!-- l. 82 --><p class='noindent'>                                                </p></td>
+ <!-- l. 89 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-9-29-' style='vertical-align:baseline;'><td class='td11' id='TBL-9-29-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-9-29-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
 <div class='center'>
-<!-- l. 87 --><p class='noindent'>
+<!-- l. 94 --><p class='noindent'>
 </p>
-<a id='x1-11r3'></a><!-- l. 93 --><div class='longtable'> <table class='longtable' id='TBL-13'><colgroup id='TBL-13-1g'><col id='TBL-13-1' /><col id='TBL-13-2' /></colgroup>
+<a id='x1-11r3'></a><!-- l. 100 --><div class='longtable'> <table class='longtable' id='TBL-13'><colgroup id='TBL-13-1g'><col id='TBL-13-1' /><col id='TBL-13-2' /></colgroup>
 <tr id='TBL-13-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-1-1' style='white-space:normal; text-align:left;'>
  <!-- l. 2 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-4-1' style='white-space:normal; text-align:left;'>
@@ -807,11 +820,11 @@ A   = A
 </tr><tr id='TBL-13-83-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-83-1' style='white-space:normal; text-align:left;'>
  <!-- l. 457 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-84-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-13-84-1' style='white-space:normal; text-align:left;'></td></tr><tr id='TBL-13-85-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-85-1' style='white-space:normal; text-align:left;'>
- <!-- l. 93 --><p class='noindent'>                                                </p></td>
+ <!-- l. 100 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-87-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-87-1' style='white-space:normal; text-align:left;'>
- <!-- l. 93 --><p class='noindent'>                                                </p></td>
+ <!-- l. 100 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-88-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-88-1' style='white-space:normal; text-align:left;'>
- <!-- l. 93 --><p class='noindent'>                                                </p></td>
+ <!-- l. 100 --><p class='noindent'>                                                </p></td>
 </tr><tr id='TBL-13-89-' style='vertical-align:baseline;'><td class='td11' id='TBL-13-89-1' style='white-space:normal; text-align:left;'>                                                 </td><td class='td11' id='TBL-13-89-2' style='white-space:normal; text-align:left;'></td></tr>
 </table></div>
 </div>
