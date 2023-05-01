@@ -8,4 +8,5 @@ It is available in a few formats:
 * [HTML](https://m516.github.io/Controls-Notes/), and 
 * [LaTeX](https://github.com/m516/Controls-Notes) source code.
 
+## Contributions
 Contributions are not just welcome, they are necessary to keep this project going strong. Generously donating 15 minutes of your time can describe a term that confuses someone else or refine an inaccurate/incorrect definition to make a lasting impact on control theory studies.
