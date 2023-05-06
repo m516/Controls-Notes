@@ -68,7 +68,7 @@
 
 
 \entry{  
-    definite
+    definite (function)
     (\href{https://en.wikipedia.org/wiki/Positive-definite_function}{W})
 }{
 \emph{Warning: this definition does not appear to be common outside of controls}\\
@@ -85,6 +85,17 @@ $V(x)$ can be classified as
         \begin{center}
             \textit{($v$ is greater than or equal to 0 regardless of $x$)}
         \end{center}
+        \begin{center}
+            \textbf{in other words}
+        \end{center}
+        \[
+            \exists \alpha_1(\cdot), \alpha_2(\cdot) \in \text{class K such that } \alpha_1(\norm{x}) \leq V(x) \leq \alpha_2(\norm{x})
+        \]
+        \begin{center}
+            \textit{(we can find two class K functions $\alpha_1$ and $\alpha_2$ that bound $V(x)$)}
+        \end{center}
+        
+        
     
     \item 
         \textbf{(globally) positive definite} if positive semidefinite AND
@@ -139,6 +150,33 @@ $V(x)$ can be classified as
     \item 
         \textbf{positive definite on some domain $D \in \mathbb{R}^n$} if \\
         we only care if the conditions for positive definite functions hold for all $x$ in $D$.
+\end{itemize}
+} % end definite
+
+
+\entry{  
+    definite (matrix)
+    (\href{https://en.wikipedia.org/wiki/Positive-definite_function}{W})
+}{
+
+Given a real-valued square matrix  $Q(x) \in \mathbb{R}^{n\times n}$ \\
+$V(x)$ can be classified as
+\begin{itemize}
+    \setlength\itemsep{2em}
+    \item 
+        \textbf{positive semidefinite} if 
+        \[
+            x^T Q x \geq 0 \qquad \forall x \in \mathbb{R}^n
+        \]
+
+        This is synonymous to saying
+        
+        \[
+            Q \geq 0 \qquad \text{and} \qquad Q \succeq 0
+        \]
+        \begin{center}
+            \textit{(Q is greater than equal to zero, and all its elements are greater than or equal to zero)}
+        \end{center}
     
     
 \end{itemize} 
@@ -150,17 +188,20 @@ $V(x)$ can be classified as
 
 
 \entry{  
-    Stability 
+    Autonomous Stability
     (\href{http://underactuated.mit.edu/lyapunov.html}{MIT})
 }{
-Given an autonomous system \[\dot{x} = f(x, t)\] and some open connected region $\mathcal{D}$ containing $\Vec{0}$\\
+Given a system \[\dot{x} = f(x)\] and some open connected region $\mathcal{D}$ containing $\Vec{0}$\\
 
 Stability is usually used to describe trajectories around the origin of a system.\\
 
 \begin{itemize}
     \setlength\itemsep{2em}
     \item \textbf{Stability}\\
-    The equilibrium point $x=0$ is stable if $\forall \epsilon>0$, $\exists \delta(\epsilon)>0$ such that $\norm{x(0)}<\delta \implies \norm{x(t)}<\epsilon$
+    The equilibrium point $x=0$ is stable if $\forall \epsilon>0$, $\exists \delta(\epsilon)>0$ such that $\norm{x(0)}<\delta \implies \norm{x(t)}<\epsilon$.
+
+    In other words, let $x_0(t)$ be the solution of $\dot{x} = f(x, t)$ starting at $x_0(t_0)$. The system is stable if, for any $\epsilon>0$, we can find some $\delta(\epsilon,t_0)$ such that 
+    \[\norm{x(t_0)}-x_0(t_0)<\delta \implies \norm{x(t_0)}-x_0(t_0)<\delta\]
 
     \begin{itemize}
         \item \textbf{In the sense of Lyapunov}\\
@@ -202,7 +243,72 @@ Stability is usually used to describe trajectories around the origin of a system
     \end{itemize}
     
     \item \textbf{Uniform stability}\\
-    The equilibrium point $x=0$ is uniformly stable if it is stable and, for each $epsilon>0$, there exists a $\delta(\epsilon)>0$, independent of $t_0$.
+    A more strict form of stability. The equilibrium point $x=0$ is uniformly stable if it is stable and, for each $epsilon>0$, there exists a $\delta(\epsilon)>0$, independent of $t_0$.
+\end{itemize}
+}
+
+
+
+
+\entry{  
+    Nonautonomous Stability
+    (\href{http://underactuated.mit.edu/lyapunov.html}{MIT})
+}{
+See the entry on stability first.
+
+Now that the time $t$ might affect the state of the system (in other words, now $\dot{x} = f(x, t)$), we need to make a few changes to definitions used to analyze stability for autonomous systems:
+
+
+
+\begin{center}
+    \textit{($V(x)$ is larger than some class K function $\alpha_1$)}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Positive semidefinite}
+    \begin{itemize}
+        \item $V(x)$ is positive semidefinite if 
+            \[\exists \alpha_1(\cdot), \alpha_2(\cdot) \in \text{class K such that } \alpha_1(\norm{x}) \leq V(x) \leq \alpha_2(\norm{x})\]
+        \item $V(x,t)$ is positive semidefinite if 
+            \[\exists \alpha_1(\cdot) \in \text{class K such that } \alpha_1(\norm{x}) \leq V(x,t)\]
+            \begin{center} OR \end{center}
+            \[V(x,t) \geq W_1(x), \qquad W_1(x) \text{ is positive definite} \]
+    \end{itemize}
+    \item \textbf{Radial unboundedness}
+    \begin{itemize}
+        \item $V(x)$ is radially unbounded if 
+            \[\exists \alpha_1(\cdot) \in \text{class $K_\infty$ such that }  V(x) \geq \alpha_1(\norm{x})\]
+        \item $V(x,t)$ is radially unbounded if 
+            \[\exists \alpha_1(\cdot) \in \text{class K such that } \alpha_1(\norm{x}) \leq V(x,t)\]
+            \begin{center} OR \end{center}
+            \[V(x,t) \geq W_1(x), \qquad W_1(x) \text{ is radially unbounded} \]
+    \end{itemize}
+    \item \textbf{Decrescent}
+    \begin{itemize}
+        \item $V(x)$ is decrescent if... ?
+        \item $V(x,t)$ is decrescent if 
+            \[\exists \alpha_1(\cdot) \in \text{class K such that } \alpha_1(\norm{x}) \leq V(x,t)\]
+            \begin{center} OR \end{center}
+            \[V(x,t) \leq W_2(x), \qquad W_2(x) \text{ is positive definite}\]
+    \end{itemize}
+\end{itemize}
+
+Now with these new definitions, we can define stability like so:
+\begin{itemize}
+    \setlength\itemsep{2em}
+    \item \textbf{Stable}\\
+    $V(x,t)$ is locally positive definite and $\dot{V}(x,t)$ is locally less than or equal to zero.
+    
+    \item \textbf{Uniformly stable (U.S.)}\\
+    A more strict form of stability. The equilibrium point $x=0$ is uniformly stable if it is stable and, for each $epsilon>0$, there exists a $\delta(\epsilon)>0$, independent of $t_0$.
+    
+    $V(x,t)$ is locally positive definite and decrescent and $\dot{V}(x,t)$ is locally less than or equal to zero.
+    
+    \item \textbf{Uniformly asymptotically stable (U.A.S.)}\\
+    $V(x,t)$ is locally positive definite and decrescent and $\dot{V}(x,t)$ is locally negative definite.
+    
+    \item \textbf{Globally uniformly asymptotically stable (G.U.A.S.)}\\
+    $V(x,t)$ is locally positive definite and decrescent and $\dot{V}(x,t)$ is negative definite.
 \end{itemize}
 }
     
@@ -243,9 +349,14 @@ Stability is usually used to describe trajectories around the origin of a system
 
 \entry{  
     Class $\kappa$ function
+    (Class k function)
 }{
-A continuous scalar function on $\mathbf{R}^+$ is 
+Class k functions are often employed to construct Lyapunov functions, which are used to prove stability properties of nonautonomous systems.
 
+Given a continuous function $\alpha(r) : \left[0,a\right) \rightarrow \left[0,\infty\right)$ 
+\emph{(a function $\alpha$ with one real input $r$ between zero inclusive and some positive real number $a$ exclusive, and returns a scalar from zero inclusive to infinity exclusive)}
+
+$\alpha(r)$ is
 \begin{itemize}
     \item \textbf{class $\kappa$} if it is:
     \begin{itemize}
@@ -262,6 +373,19 @@ A continuous scalar function on $\mathbf{R}^+$ is
         \item $\infty$ at $\infty$
     \end{itemize}
 \end{itemize} 
+
+Given a continuous function $\beta(r,s) : \left[0,a\right) \times \left[0,b\right) \rightarrow \left[0,\infty\right)$ \emph{(a function $\beta$ with two real inputs $r$ and $s$, each between zero inclusive and some positive real number exclusive, and returns a scalar from zero inclusive to infinity exclusive)}
+
+$\beta(r,s)$ is
+\begin{itemize}
+    \item \textbf{class $\kappa_\mathcal{L}$} if:
+    \begin{itemize}
+        \item for every fixed value for $s$, $\beta(r,s)$ is a class $\kappa$ function.
+        \item for every fixed value for $r$, $\beta(r,s)$ decreases as $s$ increases, and $\lim_{s \to \infty} \beta(r,s) = 0$.
+    \end{itemize}
+\end{itemize} 
+
+
 }
 
 
@@ -272,9 +396,19 @@ A continuous scalar function on $\mathbf{R}^+$ is
 \entry{  
     Radially Unbounded function
 }{
-A function $V(x)$ is radially unbounded if 
+A function $V(x)$ is \textbf{radially unbounded} if 
 \[\norm{x}\rightarrow\infty \implies \norm{V(x)}\rightarrow\infty\]
+\begin{center}
+    \textbf{in other words}
+\end{center}
+\[
+    \exists \alpha_1(\cdot) \in \text{class K such that }  V(x) \geq \alpha_1(\norm{x})
+\]
+\begin{center}
+    \textit{($V(x)$ is larger than some class K function $\alpha_1$)}
+\end{center}
 }
+
 
 
 
